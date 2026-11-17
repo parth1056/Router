@@ -1,0 +1,49 @@
+{
+  "mode": "corpus2_user_utterances",
+  "model": "qwen3:32b-q4_K_M",
+  "model_digest": "030ee887880fc378860c2dd35101da424377520441ae4bfe7be6deff8ade7840",
+  "model_metadata": {
+    "name": "qwen3:32b-q4_K_M",
+    "model": "qwen3:32b-q4_K_M",
+    "modified_at": "2026-11-16T20:18:01.9411646+05:30",
+    "size": 20201253829,
+    "digest": "030ee887880fc378860c2dd35101da424377520441ae4bfe7be6deff8ade7840",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "qwen3",
+      "families": [
+        "qwen3"
+      ],
+      "parameter_size": "32.8B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 40960,
+      "embedding_length": 5120,
+      "runner": "ggml"
+    },
+    "capabilities": [
+      "completion",
+      "tools",
+      "thinking"
+    ]
+  },
+  "plan_sha256": {
+    "train": "4e9f9a817722c387887ea6031b3fc740793a9bd23cc72961c854118d0c65c318",
+    "dev": "c28cc5a448df8ea0121d4efe35625489c0ccdf0ad5d7160cf611317f35877b1e",
+    "test": "6d2202d1b8cc25e124b8ad325225fd3730a4720b4d35c8ab30f05cf41da637c4"
+  },
+  "prompt_sha256": "72d2b5d4fc9c17b9004715907ad732205394f83a939971bc917a482c6f9085e1",
+  "policy_sha256": "48dfb3f7bcded8227e67e2bc02afc7656cb6131064a809d7f90616210f1787ca",
+  "runner_sha256": "3ebb73b29b7ec1424517c0950f1fb0e638b2c03e1e7c0f3aa5e441f57f3a0f61",
+  "options_template": {
+    "temperature": 0.8,
+    "seed": 20261116,
+    "num_ctx": 4096,
+    "num_predict": 2048,
+    "top_p": 0.95,
+    "repeat_penalty": 1.05
+  },
+  "batch_slots": 8,
+  "seed_rule": "qualification_seed + zero-based request index",
+  "slots_planned": 2400
+}

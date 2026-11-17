@@ -1,0 +1,20 @@
+{
+  "epochs_completed": 7,
+  "stop_reason": "Development patience reached after minimum four epochs",
+  "seconds": 893.9576983000006,
+  "n_train": 2000,
+  "n_dev": 200,
+  "seed": 42,
+  "micro_batch": 4,
+  "grad_accum": 4,
+  "planned_optimizer_updates_for_completed_epochs": 875,
+  "actual_optimizer_step_count": "not separately instrumented; do not equate planned with AMP-executed steps",
+  "weight_probe_changes": {
+    "encoder_max_probe_delta": 0.001235093455761671,
+    "head_max_probe_delta": 0.006014017388224602
+  },
+  "peak_torch_allocated_bytes": 8352930304,
+  "selected_checkpoint": "E:\\ly project c 68\\Polyvalent_LAYA_Freebuff_Handover\\LAYA_Routing_Handover\\LAYA_Router_2000\\reviewed\\runs\\reviewed_router\\primary\\epoch_04",
+  "test_opened": false,
+  "human_review_claim": false
+}

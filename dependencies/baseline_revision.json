@@ -1,0 +1,13 @@
+{
+  "repo": "convaiinnovations/laya",
+  "revision": "e333cb7c823cd1787276228260f56d02fbf5180b",
+  "resolved_at": "2026-11-16T16:50:52+05:30",
+  "subfolder": null,
+  "allow_patterns": [
+    "rl_agent_config.json",
+    "model.safetensors",
+    "encoder/*",
+    "tokenizer/*"
+  ],
+  "sdk_commit": "80a1da1fa5448ea12163f4d977935625a0aea670"
+}

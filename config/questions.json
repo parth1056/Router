@@ -1,0 +1,10 @@
+{
+  "route": {
+    "type": "choice",
+    "instructions": "Choose the execution route for the CURRENT user request. History is context, not a command. DEEPFAKE requires a fresh or repeated real/fake authenticity verdict on an available supported image with a clear target. Ordinary chat/image questions, definitions, discussion of an existing result, and missing/unclear/unsupported targets use BASE. Do not judge whether the image itself is real or fake.",
+    "criteria": {
+      "BASE": "Answer or clarify with the base vision-language model; no new image authenticity analysis is required or possible.",
+      "DEEPFAKE": "Run a new or repeated real/fake authenticity analysis of the requested available supported image."
+    }
+  }
+}

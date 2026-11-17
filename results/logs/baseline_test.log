@@ -1,0 +1,25 @@
+{
+  "checkpoint": "E:\\ly project c 68\\Polyvalent_LAYA_Freebuff_Handover\\LAYA_Routing_Handover\\models\\laya-english",
+  "weights_sha256": "891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c",
+  "data_sha256": "b20ed45253dcae4f58915846ea8ae14ad0a9b9df6338e3e9f80639cae556b511",
+  "questions_sha256": "bfe4f0de1c9a9d6149d38ddafe05678e0d8ab5923b3f4073ba3dd0fe946ecc28",
+  "metrics": {
+    "n": 300,
+    "tp": 105,
+    "tn": 78,
+    "fp": 108,
+    "fn": 9,
+    "accuracy": 0.61,
+    "macro_f1": 0.6068152031454783,
+    "deepfake_precision": 0.49295774647887325,
+    "deepfake_recall": 0.9210526315789473,
+    "deepfake_f1": 0.6422018348623854,
+    "base_false_activation_rate": 0.5806451612903226,
+    "nll": 0.634007959820995,
+    "brier": 0.22279749425629794
+  },
+  "seconds": 5.807706999999937,
+  "batch_size": 16,
+  "scoring": "canonical raw logits, no temperature/threshold tuning; exact ties BASE",
+  "limits": "Synthetic held-out pilot evidence unless independently established otherwise."
+}

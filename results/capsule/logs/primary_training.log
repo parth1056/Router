@@ -1,0 +1,40 @@
+epoch 7/8 step 400 loss 0.0000
+epoch 7/8 step 425 loss 0.0000
+epoch 7/8 step 450 loss 0.0000
+epoch 7/8 step 475 loss 0.0000
+epoch 7/8 step 500 loss 0.0000
+epoch 7/8 mean loss 0.0000
+{
+  "selected_checkpoint": "E:\\ly project c 68\\Polyvalent_LAYA_Freebuff_Handover\\LAYA_Routing_Handover\\LAYA_Router_2000\\reviewed\\runs\\reviewed_router\\primary\\epoch_04",
+  "selected_dev": {
+    "n": 200,
+    "tp": 72,
+    "tn": 124,
+    "fp": 2,
+    "fn": 2,
+    "accuracy": 0.98,
+    "macro_f1": 0.9785499785499785,
+    "deepfake_precision": 0.972972972972973,
+    "deepfake_recall": 0.972972972972973,
+    "deepfake_f1": 0.972972972972973,
+    "base_false_activation_rate": 0.015873015873015872,
+    "nll": 0.16224499407144752,
+    "brier": 0.020475810830491162
+  },
+  "baseline_dev": {
+    "n": 200,
+    "tp": 74,
+    "tn": 44,
+    "fp": 82,
+    "fn": 0,
+    "accuracy": 0.59,
+    "macro_f1": 0.5805626598465473,
+    "deepfake_precision": 0.47435897435897434,
+    "deepfake_recall": 1.0,
+    "deepfake_f1": 0.6434782608695652,
+    "base_false_activation_rate": 0.6507936507936508,
+    "nll": 0.6515057052969279,
+    "brier": 0.23099620648925268
+  },
+  "seconds": 893.9585559999978
+}

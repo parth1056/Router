@@ -1,0 +1,11 @@
+{
+  "model": "gemma3:27b-it-q4_K_M",
+  "digest": "6be2e2ba6843b9255820e2de2cbbe75cfdef0294ac7a531572e654d6e0eefe7d",
+  "requested": 1200,
+  "valid": 1200,
+  "BASE": 607,
+  "DEEPFAKE": 593,
+  "ambiguous": 21,
+  "inputs_sha256": "195654345ac0f4efefcc5b1674ef8ef90c1deba7298695cc0d639e48d0e96fc6",
+  "limits": "A fallible opinion for inspection, not a label or a gate."
+}

@@ -1,0 +1,12 @@
+{"error":"user_speaks_as_assistant","family_id":"fam2_train_p069","slot_id":"fam2_train_p069_b","split":"train"}
+{"error":"user_speaks_as_assistant","family_id":"fam2_train_p069","slot_id":"fam2_train_p069_d","split":"train"}
+{"error":"request_repeats_current_message","family_id":"fam2_train_p149","slot_id":"fam2_train_p149_d","split":"train"}
+{"error":"user_speaks_as_assistant","family_id":"fam2_train_p165","slot_id":"fam2_train_p165_b","split":"train"}
+{"error":"user_speaks_as_assistant","family_id":"fam2_train_p165","slot_id":"fam2_train_p165_d","split":"train"}
+{"error":"user_speaks_as_assistant","family_id":"fam2_train_p177","slot_id":"fam2_train_p177_b","split":"train"}
+{"error":"user_speaks_as_assistant","family_id":"fam2_train_p177","slot_id":"fam2_train_p177_d","split":"train"}
+{"error":"user_speaks_as_assistant","family_id":"fam2_train_p222","slot_id":"fam2_train_p222_d","split":"train"}
+{"error":"user_speaks_as_assistant","family_id":"fam2_train_p249","slot_id":"fam2_train_p249_b","split":"train"}
+{"error":"user_speaks_as_assistant","family_id":"fam2_train_p249","slot_id":"fam2_train_p249_d","split":"train"}
+{"error":"user_speaks_as_assistant","family_id":"fam2_train_p309","slot_id":"fam2_train_p309_d","split":"train"}
+{"error":"user_speaks_as_assistant","family_id":"fam2_test_p003","slot_id":"fam2_test_p003_d","split":"test"}

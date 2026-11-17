@@ -1,0 +1,67 @@
+{
+  "repo": "convaiinnovations/laya",
+  "revision": "e333cb7c823cd1787276228260f56d02fbf5180b",
+  "resolved_at": "2026-11-16T16:50:52+05:30",
+  "local_dir": "E:\\ly project c 68\\Polyvalent_LAYA_Freebuff_Handover\\LAYA_Routing_Handover\\models\\laya-english",
+  "files": {
+    ".cache/huggingface/.gitignore": {
+      "bytes": 1,
+      "sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1"
+    },
+    ".cache/huggingface/CACHEDIR.TAG": {
+      "bytes": 195,
+      "sha256": "e8893e2dcb3f4545ef67a0a5b7b769113d38eef1aa61c7c7ba14659b02af955f"
+    },
+    ".cache/huggingface/download/encoder/config.json.metadata": {
+      "bytes": 104,
+      "sha256": "abf2685889ab20fbfa81538fd50521823a2afe757e985f29465ecc311bac4e2c"
+    },
+    ".cache/huggingface/download/model.safetensors.metadata": {
+      "bytes": 128,
+      "sha256": "c4044c92d9fb129f26746f13c64b56205790f041da8c6507e70576d9d3afe4be"
+    },
+    ".cache/huggingface/download/rl_agent_config.json.metadata": {
+      "bytes": 104,
+      "sha256": "40181feb190edf5889a7bf21a5365642ccdd85d4658585622879fbad2a040422"
+    },
+    ".cache/huggingface/download/tokenizer/tokenizer.json.metadata": {
+      "bytes": 104,
+      "sha256": "c14cfc75a8fc1859c8d0ebd443d1b63a9a4f60c1b22ffb9719dc0c83070eb953"
+    },
+    ".cache/huggingface/download/tokenizer/tokenizer_config.json.metadata": {
+      "bytes": 104,
+      "sha256": "38ab5d0f845028f2de3d0d12f1c47ab2d0c5d90442d915656ba7c4f83840a3b3"
+    },
+    ".cache/huggingface/trees/e333cb7c823cd1787276228260f56d02fbf5180b.json": {
+      "bytes": 6372,
+      "sha256": "f548842ea95149258747aae0d10fa5905331b2f2ccaaaa6354b62b25668ebd18"
+    },
+    "encoder/config.json": {
+      "bytes": 2083,
+      "sha256": "bf3ab80598fdccf414855a2ce80f22859e4492d06ca8a62ddd1cfb63972f8979"
+    },
+    "model.safetensors": {
+      "bytes": 842609210,
+      "sha256": "891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c"
+    },
+    "rl_agent_config.json": {
+      "bytes": 745,
+      "sha256": "ae287b56bbcf5f8c4f4541ae9dfd00c914c4c48b940b8398c3058af37ba92bbd"
+    },
+    "tokenizer/tokenizer.json": {
+      "bytes": 3583228,
+      "sha256": "6c8aaa9a542084f2457eab775d4eeb51f92a70c0fd9de28d5edb0ddec3c08d30"
+    },
+    "tokenizer/tokenizer_config.json": {
+      "bytes": 308,
+      "sha256": "50044de60daaa73df97d262e15a40d4faf0160e7d742df64b377877a1320dd12"
+    }
+  },
+  "total_bytes": 846202686,
+  "has_required": {
+    "rl_agent_config.json": true,
+    "model.safetensors": true,
+    "encoder": true,
+    "tokenizer": true
+  }
+}

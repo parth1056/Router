@@ -1,0 +1,171 @@
+{
+  "pack": "LAYA_Reviewed_Training",
+  "decision": "APPROVED_FOR_FITTING_AFTER_PINNED_TOKENIZER_INPUT_CHECKS",
+  "files": [
+    {
+      "path": "APPROVAL.json",
+      "bytes": 1190,
+      "sha256": "d79a598cf6ba8738ae6b89a2d604cb243363a4f5e5528a68ac1a9c2e43680361"
+    },
+    {
+      "path": "config/questions.json",
+      "bytes": 747,
+      "sha256": "7b04690b542095e29efbaac1139bb9f8014e34ead0b350ef63761c98e025ad21"
+    },
+    {
+      "path": "config/routing_policy.md",
+      "bytes": 3136,
+      "sha256": "48dfb3f7bcded8227e67e2bc02afc7656cb6131064a809d7f90616210f1787ca"
+    },
+    {
+      "path": "config/run.json",
+      "bytes": 808,
+      "sha256": "5e8e24e577f1870fb0bacf05e45eff81033d5284181b06047897d11b8d042445"
+    },
+    {
+      "path": "data/dev.laya.jsonl",
+      "bytes": 280044,
+      "sha256": "18b1d39ec60413a36a2a52dd07bb5d32cecf05066dafcd27a9f6c5b017e9452b"
+    },
+    {
+      "path": "data/dev_reviewed.jsonl",
+      "bytes": 348631,
+      "sha256": "9e5c43803dc5356e8bd71e0482049f1d701b208442295f6d7ee49fe10608997a"
+    },
+    {
+      "path": "data/test.laya.jsonl",
+      "bytes": 420541,
+      "sha256": "b20ed45253dcae4f58915846ea8ae14ad0a9b9df6338e3e9f80639cae556b511"
+    },
+    {
+      "path": "data/test_reviewed.jsonl",
+      "bytes": 524180,
+      "sha256": "b3076cc4fbb54565499c105828612807c4b0c63da77e51d851939df481c6b5d6"
+    },
+    {
+      "path": "data/train.laya.jsonl",
+      "bytes": 2817366,
+      "sha256": "54d21c221ea475f0f0600cd69b2dc2fe83cbc2f1eed415ef06d61cffc5716065"
+    },
+    {
+      "path": "data/train_reviewed.jsonl",
+      "bytes": 3558289,
+      "sha256": "939898da856939eff79acc3b534e87d74ed1618ed67efe56db3ba77f153054cf"
+    },
+    {
+      "path": "PASTE_IN_FREEBUFF.txt",
+      "bytes": 601,
+      "sha256": "1042a0e2595141bae18019e6264e2558c48655017550a16b4fcaa8383132100b"
+    },
+    {
+      "path": "qa/check_reviewed_data.py",
+      "bytes": 1941,
+      "sha256": "e4f4b56b71eb767da7d5c3c2b02164781ab0b9057a0407c32a13a10885d06683"
+    },
+    {
+      "path": "qa/self_check.py",
+      "bytes": 2624,
+      "sha256": "cdb78579c7f75e25a6592d4686c49b6d4c752ab9508dfbc36db56f4b3602d0d3"
+    },
+    {
+      "path": "qa/verify_pack.py",
+      "bytes": 426,
+      "sha256": "cea7df0566ec542109e862f6dc0d19750acd0a9ac6996df5e4f0b0de0593e6bd"
+    },
+    {
+      "path": "reference/API_NOTE.md",
+      "bytes": 2174,
+      "sha256": "764868778a5a7fbaa88ace482c672d7a1bcf435009f17586c3414eeb8ebd62b9"
+    },
+    {
+      "path": "review/ADDED_TRAINING_CASES.jsonl",
+      "bytes": 100589,
+      "sha256": "ec3628b98dc70c7668b2ad504fc648dda9216865d32d92b42e67ae58eaa6f74d"
+    },
+    {
+      "path": "review/audit_review.py",
+      "bytes": 5092,
+      "sha256": "d87d7ad707962e40693a8c3a2429581b87a28bef6d4c53d5889316a1d7048c78"
+    },
+    {
+      "path": "review/curate_review.py",
+      "bytes": 23305,
+      "sha256": "f79cdaf5762246f29c5d202eb6a69d191a82eec08727147d8ab9b516dac6d931"
+    },
+    {
+      "path": "review/EVIDENCE_AUDIT.json",
+      "bytes": 1114,
+      "sha256": "23b49e8edec04c2fbf91b8bbe2052097122aec08452daf7bae22ad61867d9b93"
+    },
+    {
+      "path": "review/EXCLUSIONS.jsonl",
+      "bytes": 36548,
+      "sha256": "f7ae86f35fafed7022e8c398fccae8fb78fc9a012bc40b55c7f84073a0d17f07"
+    },
+    {
+      "path": "review/REVIEW_RECEIPT.json",
+      "bytes": 52766,
+      "sha256": "3eb065d4046973a9b22576d933cffc23bd226c7ac1713647f9650e81ebd7d9f2"
+    },
+    {
+      "path": "review/ROW_DECISIONS.jsonl",
+      "bytes": 1178241,
+      "sha256": "db0e07dba1db78024e6754028bc3e90cbce53b7924a97047c03f7ac4a01d958d"
+    },
+    {
+      "path": "REVIEW_LOCK.json",
+      "bytes": 1062,
+      "sha256": "771611e781deb00d368a647c62019226cb30d4a8521d9259e066c07f87587129"
+    },
+    {
+      "path": "RUN_REVIEWED_DATA.md",
+      "bytes": 6307,
+      "sha256": "08108aa65eb643a0b52ebca1746aca705888affa9196d16ca0fba47f87694d02"
+    },
+    {
+      "path": "tools/check_and_freeze.py",
+      "bytes": 4173,
+      "sha256": "dd5092a9f63dbfe4846f383bd077437c5511d1cfa49e791e22747acbdfbd8fe5"
+    },
+    {
+      "path": "tools/compare.py",
+      "bytes": 3518,
+      "sha256": "04066c329f8a67adc23939fc5597535cc9c28a5c9053ceeafd712cc1fffefd3f"
+    },
+    {
+      "path": "tools/evaluate_laya.py",
+      "bytes": 2254,
+      "sha256": "98997ca6100fc17e7b544daa4f828e1da23adf0fb79d0f2ac09592743803f8bf"
+    },
+    {
+      "path": "tools/export_pilot.py",
+      "bytes": 2389,
+      "sha256": "f433d81a19d64b9a8fba75bb35704a45419a691e874312e64a15e26e5d861b59"
+    },
+    {
+      "path": "tools/pilot_metrics.py",
+      "bytes": 2638,
+      "sha256": "1a81dea95f001db1362e4d05125fcc806f78d177e54e376217773f1a15a1fd96"
+    },
+    {
+      "path": "tools/run_training_and_comparison.py",
+      "bytes": 4567,
+      "sha256": "2a12f2addb9a768ed18ac6612372a178c38a00ddf1618dac2d37ccc44f50d0b4"
+    },
+    {
+      "path": "tools/select_and_freeze.py",
+      "bytes": 2346,
+      "sha256": "329859ce8a07441b61ec8b6e6a0b0aacd302dbd9582e8117869e06a9a9e59573"
+    },
+    {
+      "path": "tools/state.py",
+      "bytes": 742,
+      "sha256": "032ef0d9222134405aac5252e58c8e1bc1f39b0b88d2f6ec37acaec4d88176e2"
+    },
+    {
+      "path": "tools/train_laya.py",
+      "bytes": 7564,
+      "sha256": "c22ba179c7cdf8210eef344a3d2d8efc941732fac8ac60c341cf8cad8164a1b4"
+    }
+  ]
+}

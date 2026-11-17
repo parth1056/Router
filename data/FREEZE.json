@@ -1,0 +1,41 @@
+{
+  "splits": {
+    "train": {
+      "n": 2000,
+      "sha256": "54d21c221ea475f0f0600cd69b2dc2fe83cbc2f1eed415ef06d61cffc5716065",
+      "labels": {
+        "BASE": 1177,
+        "DEEPFAKE": 823
+      },
+      "max_assembled_tokens": 314,
+      "family_count": 730,
+      "group_count": 725
+    },
+    "dev": {
+      "n": 200,
+      "sha256": "18b1d39ec60413a36a2a52dd07bb5d32cecf05066dafcd27a9f6c5b017e9452b",
+      "labels": {
+        "BASE": 126,
+        "DEEPFAKE": 74
+      },
+      "max_assembled_tokens": 279,
+      "family_count": 70,
+      "group_count": 60
+    },
+    "test": {
+      "n": 300,
+      "sha256": "b20ed45253dcae4f58915846ea8ae14ad0a9b9df6338e3e9f80639cae556b511",
+      "labels": {
+        "BASE": 186,
+        "DEEPFAKE": 114
+      },
+      "max_assembled_tokens": 275,
+      "family_count": 105,
+      "group_count": 105
+    }
+  },
+  "overlaps": [],
+  "bad_token_rows": [],
+  "evaluation_type": "group-held-out synthetic pilot; no human-test claim",
+  "test_scored": false
+}

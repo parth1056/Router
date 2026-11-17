@@ -1,0 +1,41 @@
+{
+  "train": {
+    "generated_rows": 1900,
+    "seed_rows": 100,
+    "rows": 2000,
+    "families": 670,
+    "jobs": 670,
+    "routes": {
+      "BASE": 1060,
+      "DEEPFAKE": 840
+    },
+    "context_rows": 720,
+    "max_variants_per_family": 4
+  },
+  "dev": {
+    "generated_rows": 200,
+    "seed_rows": 0,
+    "rows": 200,
+    "families": 70,
+    "jobs": 70,
+    "routes": {
+      "BASE": 120,
+      "DEEPFAKE": 80
+    },
+    "context_rows": 80,
+    "max_variants_per_family": 4
+  },
+  "test": {
+    "generated_rows": 300,
+    "seed_rows": 0,
+    "rows": 300,
+    "families": 105,
+    "jobs": 105,
+    "routes": {
+      "BASE": 180,
+      "DEEPFAKE": 120
+    },
+    "context_rows": 120,
+    "max_variants_per_family": 4
+  }
+}

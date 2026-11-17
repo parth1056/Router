@@ -1,0 +1,37 @@
+{
+  "pilot_training_authorised": true,
+  "source": "Parth approved 2000 train / 200 dev / 300 test on 17 November 2026; one consolidated Codex AI review before fitting",
+  "target_train": 2000,
+  "minimum_train": 2000,
+  "maximum_train": 2000,
+  "dev": 200,
+  "test": 300,
+  "human_review_required_for_this_exploratory_pilot": false,
+  "must_not_claim_human_review": true,
+  "test_type": "frozen group-held-out synthetic benchmark",
+  "full_4000_required": false,
+  "primary_seed": 42,
+  "calibration_required": false,
+  "perfect_routing_required": false,
+  "minimum_train_families": 500,
+  "maximum_variants_per_train_family": 4,
+  "data_review_required_before_fitting": false,
+  "data_review_complete": true,
+  "reviewer": "Codex AI; human annotation not claimed",
+  "decision": "APPROVED_FOR_FITTING_AFTER_PINNED_TOKENIZER_INPUT_CHECKS",
+  "review_source_sha256": "3bec2683239192f24fd8594e579abf29787a292305ca988ec1712511c1b4833c",
+  "actual_label_counts": {
+    "train": {
+      "BASE": 1177,
+      "DEEPFAKE": 823
+    },
+    "dev": {
+      "BASE": 126,
+      "DEEPFAKE": 74
+    },
+    "test": {
+      "BASE": 186,
+      "DEEPFAKE": 114
+    }
+  }
+}

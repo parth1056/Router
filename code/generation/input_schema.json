@@ -1,0 +1,127 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "message",
+    "history",
+    "assets",
+    "active_image_id",
+    "last_analysis"
+  ],
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "history": {
+      "type": "array",
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "role",
+          "content"
+        ],
+        "properties": {
+          "role": {
+            "enum": [
+              "user",
+              "assistant"
+            ]
+          },
+          "content": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "kind",
+          "availability",
+          "support"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "enum": [
+              "image",
+              "video",
+              "audio",
+              "document"
+            ]
+          },
+          "availability": {
+            "enum": [
+              "available",
+              "missing",
+              "expired"
+            ]
+          },
+          "support": {
+            "enum": [
+              "supported",
+              "unsupported",
+              "unknown"
+            ]
+          }
+        }
+      }
+    },
+    "active_image_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "last_analysis": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "asset_id",
+        "verdict",
+        "confidence",
+        "evidence_summary"
+      ],
+      "properties": {
+        "asset_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "verdict": {
+          "enum": [
+            "REAL",
+            "FAKE",
+            "INCONCLUSIVE"
+          ]
+        },
+        "confidence": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "evidence_summary": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "decision": "SYNTHETIC_ROUTING_PILOT_COMPLETE_WITH_LABEL_AMBIGUITY_LIMITATION",
+  "internal_hashes_verified": 22,
+  "exact_reviewed_data_hashes_match": true,
+  "questions_hashes_resolved": "Freeze hashes raw file bytes; inference receipts hash sorted question JSON. Both match their local sources.",
+  "raw_argmax_and_softmax_verified_for": 600,
+  "independently_recomputed_metrics": {
+    "baseline": {
+      "n": 300,
+      "tp": 105,
+      "tn": 78,
+      "fp": 108,
+      "fn": 9,
+      "accuracy": 0.61,
+      "macro_f1": 0.6068152031454783,
+      "deepfake_precision": 0.49295774647887325,
+      "deepfake_recall": 0.9210526315789473,
+      "base_false_activation_rate": 0.5806451612903226,
+      "nll": 0.634007959820995,
+      "brier": 0.22279749425629794
+    },
+    "trained": {
+      "n": 300,
+      "tp": 110,
+      "tn": 184,
+      "fp": 2,
+      "fn": 4,
+      "accuracy": 0.98,
+      "macro_f1": 0.9787042733424827,
+      "deepfake_precision": 0.9821428571428571,
+      "deepfake_recall": 0.9649122807017544,
+      "base_false_activation_rate": 0.010752688172043012,
+      "nll": 0.15874596631111898,
+      "brier": 0.019887050274860905
+    }
+  },
+  "comparison_bootstrap_recomputed_exactly": true,
+  "epoch_selection_verified": 4,
+  "epochs_completed": 7,
+  "selected_checkpoint_planned_updates": 500,
+  "completed_run_planned_updates": 875,
+  "peak_allocated_GiB": 7.779272556304932,
+  "peak_allocated_decimal_GB": 8.352930304,
+  "error_count": 6,
+  "subsets": {
+    "ordinary_image": {
+      "n": 64,
+      "correct": 64,
+      "accuracy": 1.0
+    },
+    "new_image_or_mixed": {
+      "n": 24,
+      "correct": 24,
+      "accuracy": 1.0
+    },
+    "explicit_reanalysis": {
+      "n": 48,
+      "correct": 48,
+      "accuracy": 1.0
+    },
+    "explain_existing": {
+      "n": 40,
+      "correct": 40,
+      "accuracy": 1.0
+    },
+    "general_chat": {
+      "n": 24,
+      "correct": 24,
+      "accuracy": 1.0
+    },
+    "conceptual_authenticity": {
+      "n": 16,
+      "correct": 16,
+      "accuracy": 1.0
+    },
+    "negation_quotes_injection": {
+      "n": 16,
+      "correct": 16,
+      "accuracy": 1.0
+    },
+    "clarify_or_unsupported": {
+      "n": 20,
+      "correct": 20,
+      "accuracy": 1.0
+    },
+    "explicit_authenticity": {
+      "n": 32,
+      "correct": 32,
+      "accuracy": 1.0
+    },
+    "indirect_authenticity": {
+      "n": 16,
+      "correct": 10,
+      "accuracy": 0.625
+    }
+  },
+  "remote_reload_receipt_consistent": true,
+  "weights_locally_available_for_independent_reload": false,
+  "labels_changed_after_scoring": false,
+  "model_retrained_during_review": false
+}

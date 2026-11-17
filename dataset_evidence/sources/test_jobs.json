@@ -1,0 +1,6549 @@
+[
+ {
+  "job_id": "fam2_test_p001_pair",
+  "family_id": "fam2_test_p001",
+  "split": "test",
+  "scene": "farmers market photo",
+  "mode": "context_pair",
+  "recipe_group": "NEW_TARGET_CONTINUATION",
+  "fixed_current_message": "Now this one too.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    },
+    {
+     "id": "img_2",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_2",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p001_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to look at the first image in an ordinary way. Do not write the assistant reply.",
+    "assistant_reply": "I have described the first image: people posing together outdoors."
+   },
+   {
+    "slot_id": "fam2_test_p001_d",
+    "category": "new_image_or_mixed",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to check the first image for authenticity. Do not write the assistant reply.",
+    "assistant_reply": "The first image was checked and recorded as FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p002_pair",
+  "family_id": "fam2_test_p002",
+  "split": "test",
+  "scene": "choir performance portrait",
+  "mode": "context_pair",
+  "recipe_group": "REPEAT_PREVIOUS_OPERATION",
+  "fixed_current_message": "Do that once more.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p002_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to read the text in the image. Do not write the assistant reply.",
+    "assistant_reply": "The image text has been read again and has not changed."
+   },
+   {
+    "slot_id": "fam2_test_p002_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to run an authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "The check was repeated; the recorded verdict is FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p003_pair",
+  "family_id": "fam2_test_p003",
+  "split": "test",
+  "scene": "mountain rescue team photo",
+  "mode": "context_pair",
+  "recipe_group": "ACCEPT_CLEAR_OFFER",
+  "fixed_current_message": "Please do that.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "REAL",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p003_b",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer to explain the stored result. Do not write the assistant reply.",
+    "assistant_reply": "Would it help if I summarise the existing result?"
+   },
+   {
+    "slot_id": "fam2_test_p003_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer a fresh authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "Would it help if I carry out another authenticity check?"
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p004_pair",
+  "family_id": "fam2_test_p004",
+  "split": "test",
+  "scene": "community kitchen photo",
+  "mode": "context_pair",
+  "recipe_group": "NEW_TARGET_CONTINUATION",
+  "fixed_current_message": "Now this one too.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    },
+    {
+     "id": "img_2",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_2",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p004_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to look at the first image in an ordinary way. Do not write the assistant reply.",
+    "assistant_reply": "I have described the first image: people posing together outdoors."
+   },
+   {
+    "slot_id": "fam2_test_p004_d",
+    "category": "new_image_or_mixed",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to check the first image for authenticity. Do not write the assistant reply.",
+    "assistant_reply": "The first image was checked and recorded as FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p005_pair",
+  "family_id": "fam2_test_p005",
+  "split": "test",
+  "scene": "bookshop window photo",
+  "mode": "context_pair",
+  "recipe_group": "REPEAT_PREVIOUS_OPERATION",
+  "fixed_current_message": "Do that once more.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "REAL",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p005_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to read the text in the image. Do not write the assistant reply.",
+    "assistant_reply": "The image text has been read again and has not changed."
+   },
+   {
+    "slot_id": "fam2_test_p005_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to run an authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "The check was repeated; the recorded verdict is REAL."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p006_pair",
+  "family_id": "fam2_test_p006",
+  "split": "test",
+  "scene": "swimming gala portrait",
+  "mode": "context_pair",
+  "recipe_group": "ACCEPT_CLEAR_OFFER",
+  "fixed_current_message": "Please do that.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p006_b",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer to explain the stored result. Do not write the assistant reply.",
+    "assistant_reply": "I am able to summarise the existing result. Do you want that?"
+   },
+   {
+    "slot_id": "fam2_test_p006_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer a fresh authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "I am able to carry out another authenticity check. Do you want that?"
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p007_pair",
+  "family_id": "fam2_test_p007",
+  "split": "test",
+  "scene": "repair cafe photo",
+  "mode": "context_pair",
+  "recipe_group": "NEW_TARGET_CONTINUATION",
+  "fixed_current_message": "Now this one too.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    },
+    {
+     "id": "img_2",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_2",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p007_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to look at the first image in an ordinary way. Do not write the assistant reply.",
+    "assistant_reply": "I have described the first image: people posing together outdoors."
+   },
+   {
+    "slot_id": "fam2_test_p007_d",
+    "category": "new_image_or_mixed",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to check the first image for authenticity. Do not write the assistant reply.",
+    "assistant_reply": "The first image was checked and recorded as FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p008_pair",
+  "family_id": "fam2_test_p008",
+  "split": "test",
+  "scene": "holiday cottage interior",
+  "mode": "context_pair",
+  "recipe_group": "REPEAT_PREVIOUS_OPERATION",
+  "fixed_current_message": "Do that once more.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p008_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to read the text in the image. Do not write the assistant reply.",
+    "assistant_reply": "The image text has been read again and has not changed."
+   },
+   {
+    "slot_id": "fam2_test_p008_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to run an authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "The check was repeated; the recorded verdict is FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p009_pair",
+  "family_id": "fam2_test_p009",
+  "split": "test",
+  "scene": "orchestra rehearsal photo",
+  "mode": "context_pair",
+  "recipe_group": "ACCEPT_CLEAR_OFFER",
+  "fixed_current_message": "Please do that.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "REAL",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p009_b",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer to explain the stored result. Do not write the assistant reply.",
+    "assistant_reply": "Would it help if I summarise the existing result?"
+   },
+   {
+    "slot_id": "fam2_test_p009_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer a fresh authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "Would it help if I carry out another authenticity check?"
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p010_pair",
+  "family_id": "fam2_test_p010",
+  "split": "test",
+  "scene": "allotment garden photo",
+  "mode": "context_pair",
+  "recipe_group": "NEW_TARGET_CONTINUATION",
+  "fixed_current_message": "Now this one too.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    },
+    {
+     "id": "img_2",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_2",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p010_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to look at the first image in an ordinary way. Do not write the assistant reply.",
+    "assistant_reply": "I have described the first image: people posing together outdoors."
+   },
+   {
+    "slot_id": "fam2_test_p010_d",
+    "category": "new_image_or_mixed",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to check the first image for authenticity. Do not write the assistant reply.",
+    "assistant_reply": "The first image was checked and recorded as FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p011_pair",
+  "family_id": "fam2_test_p011",
+  "split": "test",
+  "scene": "village fete poster",
+  "mode": "context_pair",
+  "recipe_group": "REPEAT_PREVIOUS_OPERATION",
+  "fixed_current_message": "Do that once more.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "REAL",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p011_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to read the text in the image. Do not write the assistant reply.",
+    "assistant_reply": "The image text has been read again and has not changed."
+   },
+   {
+    "slot_id": "fam2_test_p011_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to run an authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "The check was repeated; the recorded verdict is REAL."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p012_pair",
+  "family_id": "fam2_test_p012",
+  "split": "test",
+  "scene": "birdwatching photo",
+  "mode": "context_pair",
+  "recipe_group": "ACCEPT_CLEAR_OFFER",
+  "fixed_current_message": "Please do that.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p012_b",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer to explain the stored result. Do not write the assistant reply.",
+    "assistant_reply": "I am able to summarise the existing result. Do you want that?"
+   },
+   {
+    "slot_id": "fam2_test_p012_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer a fresh authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "I am able to carry out another authenticity check. Do you want that?"
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p013_pair",
+  "family_id": "fam2_test_p013",
+  "split": "test",
+  "scene": "drama rehearsal portrait",
+  "mode": "context_pair",
+  "recipe_group": "NEW_TARGET_CONTINUATION",
+  "fixed_current_message": "Now this one too.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    },
+    {
+     "id": "img_2",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_2",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p013_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to look at the first image in an ordinary way. Do not write the assistant reply.",
+    "assistant_reply": "I have described the first image: people posing together outdoors."
+   },
+   {
+    "slot_id": "fam2_test_p013_d",
+    "category": "new_image_or_mixed",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to check the first image for authenticity. Do not write the assistant reply.",
+    "assistant_reply": "The first image was checked and recorded as FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p014_pair",
+  "family_id": "fam2_test_p014",
+  "split": "test",
+  "scene": "food bank parcel photo",
+  "mode": "context_pair",
+  "recipe_group": "REPEAT_PREVIOUS_OPERATION",
+  "fixed_current_message": "Do that once more.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p014_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to read the text in the image. Do not write the assistant reply.",
+    "assistant_reply": "The image text has been read again and has not changed."
+   },
+   {
+    "slot_id": "fam2_test_p014_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to run an authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "The check was repeated; the recorded verdict is FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p015_pair",
+  "family_id": "fam2_test_p015",
+  "split": "test",
+  "scene": "windmill photo",
+  "mode": "context_pair",
+  "recipe_group": "ACCEPT_CLEAR_OFFER",
+  "fixed_current_message": "Please do that.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "REAL",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p015_b",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer to explain the stored result. Do not write the assistant reply.",
+    "assistant_reply": "Would it help if I summarise the existing result?"
+   },
+   {
+    "slot_id": "fam2_test_p015_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer a fresh authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "Would it help if I carry out another authenticity check?"
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p016_pair",
+  "family_id": "fam2_test_p016",
+  "split": "test",
+  "scene": "tram stop photo",
+  "mode": "context_pair",
+  "recipe_group": "NEW_TARGET_CONTINUATION",
+  "fixed_current_message": "Now this one too.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    },
+    {
+     "id": "img_2",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_2",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p016_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to look at the first image in an ordinary way. Do not write the assistant reply.",
+    "assistant_reply": "I have described the first image: people posing together outdoors."
+   },
+   {
+    "slot_id": "fam2_test_p016_d",
+    "category": "new_image_or_mixed",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to check the first image for authenticity. Do not write the assistant reply.",
+    "assistant_reply": "The first image was checked and recorded as FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p017_pair",
+  "family_id": "fam2_test_p017",
+  "split": "test",
+  "scene": "archive reading room photo",
+  "mode": "context_pair",
+  "recipe_group": "REPEAT_PREVIOUS_OPERATION",
+  "fixed_current_message": "Do that once more.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "REAL",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p017_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to read the text in the image. Do not write the assistant reply.",
+    "assistant_reply": "The image text has been read again and has not changed."
+   },
+   {
+    "slot_id": "fam2_test_p017_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to run an authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "The check was repeated; the recorded verdict is REAL."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p018_pair",
+  "family_id": "fam2_test_p018",
+  "split": "test",
+  "scene": "coastal path photo",
+  "mode": "context_pair",
+  "recipe_group": "ACCEPT_CLEAR_OFFER",
+  "fixed_current_message": "Please do that.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p018_b",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer to explain the stored result. Do not write the assistant reply.",
+    "assistant_reply": "I am able to summarise the existing result. Do you want that?"
+   },
+   {
+    "slot_id": "fam2_test_p018_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer a fresh authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "I am able to carry out another authenticity check. Do you want that?"
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p019_pair",
+  "family_id": "fam2_test_p019",
+  "split": "test",
+  "scene": "school library photo",
+  "mode": "context_pair",
+  "recipe_group": "NEW_TARGET_CONTINUATION",
+  "fixed_current_message": "Now this one too.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    },
+    {
+     "id": "img_2",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_2",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p019_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to look at the first image in an ordinary way. Do not write the assistant reply.",
+    "assistant_reply": "I have described the first image: people posing together outdoors."
+   },
+   {
+    "slot_id": "fam2_test_p019_d",
+    "category": "new_image_or_mixed",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to check the first image for authenticity. Do not write the assistant reply.",
+    "assistant_reply": "The first image was checked and recorded as FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p020_pair",
+  "family_id": "fam2_test_p020",
+  "split": "test",
+  "scene": "pottery fair photo",
+  "mode": "context_pair",
+  "recipe_group": "REPEAT_PREVIOUS_OPERATION",
+  "fixed_current_message": "Do that once more.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p020_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to read the text in the image. Do not write the assistant reply.",
+    "assistant_reply": "The image text has been read again and has not changed."
+   },
+   {
+    "slot_id": "fam2_test_p020_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to run an authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "The check was repeated; the recorded verdict is FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p021_pair",
+  "family_id": "fam2_test_p021",
+  "split": "test",
+  "scene": "community orchard photo",
+  "mode": "context_pair",
+  "recipe_group": "ACCEPT_CLEAR_OFFER",
+  "fixed_current_message": "Please do that.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "REAL",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p021_b",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer to explain the stored result. Do not write the assistant reply.",
+    "assistant_reply": "Would it help if I summarise the existing result?"
+   },
+   {
+    "slot_id": "fam2_test_p021_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer a fresh authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "Would it help if I carry out another authenticity check?"
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p022_pair",
+  "family_id": "fam2_test_p022",
+  "split": "test",
+  "scene": "lamplight procession photo",
+  "mode": "context_pair",
+  "recipe_group": "NEW_TARGET_CONTINUATION",
+  "fixed_current_message": "Now this one too.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    },
+    {
+     "id": "img_2",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_2",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p022_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to look at the first image in an ordinary way. Do not write the assistant reply.",
+    "assistant_reply": "I have described the first image: people posing together outdoors."
+   },
+   {
+    "slot_id": "fam2_test_p022_d",
+    "category": "new_image_or_mixed",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to check the first image for authenticity. Do not write the assistant reply.",
+    "assistant_reply": "The first image was checked and recorded as FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p023_pair",
+  "family_id": "fam2_test_p023",
+  "split": "test",
+  "scene": "boxing club photo",
+  "mode": "context_pair",
+  "recipe_group": "REPEAT_PREVIOUS_OPERATION",
+  "fixed_current_message": "Do that once more.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "REAL",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p023_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to read the text in the image. Do not write the assistant reply.",
+    "assistant_reply": "The image text has been read again and has not changed."
+   },
+   {
+    "slot_id": "fam2_test_p023_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to run an authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "The check was repeated; the recorded verdict is REAL."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p024_pair",
+  "family_id": "fam2_test_p024",
+  "split": "test",
+  "scene": "bake off photo",
+  "mode": "context_pair",
+  "recipe_group": "ACCEPT_CLEAR_OFFER",
+  "fixed_current_message": "Please do that.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p024_b",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer to explain the stored result. Do not write the assistant reply.",
+    "assistant_reply": "I am able to summarise the existing result. Do you want that?"
+   },
+   {
+    "slot_id": "fam2_test_p024_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer a fresh authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "I am able to carry out another authenticity check. Do you want that?"
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p025_pair",
+  "family_id": "fam2_test_p025",
+  "split": "test",
+  "scene": "salvation army band photo",
+  "mode": "context_pair",
+  "recipe_group": "NEW_TARGET_CONTINUATION",
+  "fixed_current_message": "Now this one too.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    },
+    {
+     "id": "img_2",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_2",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p025_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to look at the first image in an ordinary way. Do not write the assistant reply.",
+    "assistant_reply": "I have described the first image: people posing together outdoors."
+   },
+   {
+    "slot_id": "fam2_test_p025_d",
+    "category": "new_image_or_mixed",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to check the first image for authenticity. Do not write the assistant reply.",
+    "assistant_reply": "The first image was checked and recorded as FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p026_pair",
+  "family_id": "fam2_test_p026",
+  "split": "test",
+  "scene": "botanical glasshouse photo",
+  "mode": "context_pair",
+  "recipe_group": "REPEAT_PREVIOUS_OPERATION",
+  "fixed_current_message": "Do that once more.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p026_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to read the text in the image. Do not write the assistant reply.",
+    "assistant_reply": "The image text has been read again and has not changed."
+   },
+   {
+    "slot_id": "fam2_test_p026_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to run an authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "The check was repeated; the recorded verdict is FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p027_pair",
+  "family_id": "fam2_test_p027",
+  "split": "test",
+  "scene": "market cross photo",
+  "mode": "context_pair",
+  "recipe_group": "ACCEPT_CLEAR_OFFER",
+  "fixed_current_message": "Please do that.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "REAL",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p027_b",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer to explain the stored result. Do not write the assistant reply.",
+    "assistant_reply": "Would it help if I summarise the existing result?"
+   },
+   {
+    "slot_id": "fam2_test_p027_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer a fresh authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "Would it help if I carry out another authenticity check?"
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p028_pair",
+  "family_id": "fam2_test_p028",
+  "split": "test",
+  "scene": "fishing harbour photo",
+  "mode": "context_pair",
+  "recipe_group": "NEW_TARGET_CONTINUATION",
+  "fixed_current_message": "Now this one too.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    },
+    {
+     "id": "img_2",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_2",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p028_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to look at the first image in an ordinary way. Do not write the assistant reply.",
+    "assistant_reply": "I have described the first image: people posing together outdoors."
+   },
+   {
+    "slot_id": "fam2_test_p028_d",
+    "category": "new_image_or_mixed",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to check the first image for authenticity. Do not write the assistant reply.",
+    "assistant_reply": "The first image was checked and recorded as FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p029_pair",
+  "family_id": "fam2_test_p029",
+  "split": "test",
+  "scene": "rowing regatta photo",
+  "mode": "context_pair",
+  "recipe_group": "REPEAT_PREVIOUS_OPERATION",
+  "fixed_current_message": "Do that once more.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "REAL",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p029_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to read the text in the image. Do not write the assistant reply.",
+    "assistant_reply": "The image text has been read again and has not changed."
+   },
+   {
+    "slot_id": "fam2_test_p029_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to run an authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "The check was repeated; the recorded verdict is REAL."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p030_pair",
+  "family_id": "fam2_test_p030",
+  "split": "test",
+  "scene": "heritage railway photo",
+  "mode": "context_pair",
+  "recipe_group": "ACCEPT_CLEAR_OFFER",
+  "fixed_current_message": "Please do that.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p030_b",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer to explain the stored result. Do not write the assistant reply.",
+    "assistant_reply": "I am able to summarise the existing result. Do you want that?"
+   },
+   {
+    "slot_id": "fam2_test_p030_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer a fresh authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "I am able to carry out another authenticity check. Do you want that?"
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p031_pair",
+  "family_id": "fam2_test_p031",
+  "split": "test",
+  "scene": "castle grounds photo",
+  "mode": "context_pair",
+  "recipe_group": "NEW_TARGET_CONTINUATION",
+  "fixed_current_message": "Now this one too.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    },
+    {
+     "id": "img_2",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_2",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p031_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to look at the first image in an ordinary way. Do not write the assistant reply.",
+    "assistant_reply": "I have described the first image: people posing together outdoors."
+   },
+   {
+    "slot_id": "fam2_test_p031_d",
+    "category": "new_image_or_mixed",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to check the first image for authenticity. Do not write the assistant reply.",
+    "assistant_reply": "The first image was checked and recorded as FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p032_pair",
+  "family_id": "fam2_test_p032",
+  "split": "test",
+  "scene": "cider press photo",
+  "mode": "context_pair",
+  "recipe_group": "REPEAT_PREVIOUS_OPERATION",
+  "fixed_current_message": "Do that once more.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p032_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to read the text in the image. Do not write the assistant reply.",
+    "assistant_reply": "The image text has been read again and has not changed."
+   },
+   {
+    "slot_id": "fam2_test_p032_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to run an authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "The check was repeated; the recorded verdict is FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p033_pair",
+  "family_id": "fam2_test_p033",
+  "split": "test",
+  "scene": "knitting circle photo",
+  "mode": "context_pair",
+  "recipe_group": "ACCEPT_CLEAR_OFFER",
+  "fixed_current_message": "Please do that.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "REAL",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p033_b",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer to explain the stored result. Do not write the assistant reply.",
+    "assistant_reply": "Would it help if I summarise the existing result?"
+   },
+   {
+    "slot_id": "fam2_test_p033_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer a fresh authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "Would it help if I carry out another authenticity check?"
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p034_pair",
+  "family_id": "fam2_test_p034",
+  "split": "test",
+  "scene": "market research stand photo",
+  "mode": "context_pair",
+  "recipe_group": "NEW_TARGET_CONTINUATION",
+  "fixed_current_message": "Now this one too.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    },
+    {
+     "id": "img_2",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_2",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p034_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to look at the first image in an ordinary way. Do not write the assistant reply.",
+    "assistant_reply": "I have described the first image: people posing together outdoors."
+   },
+   {
+    "slot_id": "fam2_test_p034_d",
+    "category": "new_image_or_mixed",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to check the first image for authenticity. Do not write the assistant reply.",
+    "assistant_reply": "The first image was checked and recorded as FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p035_pair",
+  "family_id": "fam2_test_p035",
+  "split": "test",
+  "scene": "lighthouse photo",
+  "mode": "context_pair",
+  "recipe_group": "REPEAT_PREVIOUS_OPERATION",
+  "fixed_current_message": "Do that once more.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "REAL",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p035_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to read the text in the image. Do not write the assistant reply.",
+    "assistant_reply": "The image text has been read again and has not changed."
+   },
+   {
+    "slot_id": "fam2_test_p035_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to run an authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "The check was repeated; the recorded verdict is REAL."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p036_pair",
+  "family_id": "fam2_test_p036",
+  "split": "test",
+  "scene": "mining museum photo",
+  "mode": "context_pair",
+  "recipe_group": "ACCEPT_CLEAR_OFFER",
+  "fixed_current_message": "Please do that.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p036_b",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer to explain the stored result. Do not write the assistant reply.",
+    "assistant_reply": "I am able to summarise the existing result. Do you want that?"
+   },
+   {
+    "slot_id": "fam2_test_p036_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer a fresh authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "I am able to carry out another authenticity check. Do you want that?"
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p037_pair",
+  "family_id": "fam2_test_p037",
+  "split": "test",
+  "scene": "coracle race photo",
+  "mode": "context_pair",
+  "recipe_group": "NEW_TARGET_CONTINUATION",
+  "fixed_current_message": "Now this one too.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    },
+    {
+     "id": "img_2",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_2",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p037_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to look at the first image in an ordinary way. Do not write the assistant reply.",
+    "assistant_reply": "I have described the first image: people posing together outdoors."
+   },
+   {
+    "slot_id": "fam2_test_p037_d",
+    "category": "new_image_or_mixed",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to check the first image for authenticity. Do not write the assistant reply.",
+    "assistant_reply": "The first image was checked and recorded as FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p038_pair",
+  "family_id": "fam2_test_p038",
+  "split": "test",
+  "scene": "town crier photo",
+  "mode": "context_pair",
+  "recipe_group": "REPEAT_PREVIOUS_OPERATION",
+  "fixed_current_message": "Do that once more.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p038_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to read the text in the image. Do not write the assistant reply.",
+    "assistant_reply": "The image text has been read again and has not changed."
+   },
+   {
+    "slot_id": "fam2_test_p038_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to run an authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "The check was repeated; the recorded verdict is FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p039_pair",
+  "family_id": "fam2_test_p039",
+  "split": "test",
+  "scene": "apple day photo",
+  "mode": "context_pair",
+  "recipe_group": "ACCEPT_CLEAR_OFFER",
+  "fixed_current_message": "Please do that.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "REAL",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p039_b",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer to explain the stored result. Do not write the assistant reply.",
+    "assistant_reply": "Would it help if I summarise the existing result?"
+   },
+   {
+    "slot_id": "fam2_test_p039_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer a fresh authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "Would it help if I carry out another authenticity check?"
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p040_pair",
+  "family_id": "fam2_test_p040",
+  "split": "test",
+  "scene": "wetland boardwalk photo",
+  "mode": "context_pair",
+  "recipe_group": "NEW_TARGET_CONTINUATION",
+  "fixed_current_message": "Now this one too.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    },
+    {
+     "id": "img_2",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_2",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p040_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to look at the first image in an ordinary way. Do not write the assistant reply.",
+    "assistant_reply": "I have described the first image: people posing together outdoors."
+   },
+   {
+    "slot_id": "fam2_test_p040_d",
+    "category": "new_image_or_mixed",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to check the first image for authenticity. Do not write the assistant reply.",
+    "assistant_reply": "The first image was checked and recorded as FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p041_pair",
+  "family_id": "fam2_test_p041",
+  "split": "test",
+  "scene": "garden railway photo",
+  "mode": "context_pair",
+  "recipe_group": "REPEAT_PREVIOUS_OPERATION",
+  "fixed_current_message": "Do that once more.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "REAL",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p041_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to read the text in the image. Do not write the assistant reply.",
+    "assistant_reply": "The image text has been read again and has not changed."
+   },
+   {
+    "slot_id": "fam2_test_p041_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to run an authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "The check was repeated; the recorded verdict is REAL."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p042_pair",
+  "family_id": "fam2_test_p042",
+  "split": "test",
+  "scene": "sheepdog trial photo",
+  "mode": "context_pair",
+  "recipe_group": "ACCEPT_CLEAR_OFFER",
+  "fixed_current_message": "Please do that.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p042_b",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer to explain the stored result. Do not write the assistant reply.",
+    "assistant_reply": "I am able to summarise the existing result. Do you want that?"
+   },
+   {
+    "slot_id": "fam2_test_p042_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer a fresh authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "I am able to carry out another authenticity check. Do you want that?"
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p043_pair",
+  "family_id": "fam2_test_p043",
+  "split": "test",
+  "scene": "carnival float photo",
+  "mode": "context_pair",
+  "recipe_group": "NEW_TARGET_CONTINUATION",
+  "fixed_current_message": "Now this one too.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    },
+    {
+     "id": "img_2",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_2",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p043_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to look at the first image in an ordinary way. Do not write the assistant reply.",
+    "assistant_reply": "I have described the first image: people posing together outdoors."
+   },
+   {
+    "slot_id": "fam2_test_p043_d",
+    "category": "new_image_or_mixed",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to check the first image for authenticity. Do not write the assistant reply.",
+    "assistant_reply": "The first image was checked and recorded as FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p044_pair",
+  "family_id": "fam2_test_p044",
+  "split": "test",
+  "scene": "beekeepers market photo",
+  "mode": "context_pair",
+  "recipe_group": "REPEAT_PREVIOUS_OPERATION",
+  "fixed_current_message": "Do that once more.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p044_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to read the text in the image. Do not write the assistant reply.",
+    "assistant_reply": "The image text has been read again and has not changed."
+   },
+   {
+    "slot_id": "fam2_test_p044_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to run an authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "The check was repeated; the recorded verdict is FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p045_pair",
+  "family_id": "fam2_test_p045",
+  "split": "test",
+  "scene": "pier fireworks photo",
+  "mode": "context_pair",
+  "recipe_group": "ACCEPT_CLEAR_OFFER",
+  "fixed_current_message": "Please do that.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "REAL",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p045_b",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer to explain the stored result. Do not write the assistant reply.",
+    "assistant_reply": "Would it help if I summarise the existing result?"
+   },
+   {
+    "slot_id": "fam2_test_p045_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer a fresh authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "Would it help if I carry out another authenticity check?"
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p046_pair",
+  "family_id": "fam2_test_p046",
+  "split": "test",
+  "scene": "chapel choir photo",
+  "mode": "context_pair",
+  "recipe_group": "NEW_TARGET_CONTINUATION",
+  "fixed_current_message": "Now this one too.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    },
+    {
+     "id": "img_2",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_2",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p046_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to look at the first image in an ordinary way. Do not write the assistant reply.",
+    "assistant_reply": "I have described the first image: people posing together outdoors."
+   },
+   {
+    "slot_id": "fam2_test_p046_d",
+    "category": "new_image_or_mixed",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to check the first image for authenticity. Do not write the assistant reply.",
+    "assistant_reply": "The first image was checked and recorded as FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p047_pair",
+  "family_id": "fam2_test_p047",
+  "split": "test",
+  "scene": "village green photo",
+  "mode": "context_pair",
+  "recipe_group": "REPEAT_PREVIOUS_OPERATION",
+  "fixed_current_message": "Do that once more.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "REAL",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p047_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to read the text in the image. Do not write the assistant reply.",
+    "assistant_reply": "The image text has been read again and has not changed."
+   },
+   {
+    "slot_id": "fam2_test_p047_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to run an authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "The check was repeated; the recorded verdict is REAL."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p048_pair",
+  "family_id": "fam2_test_p048",
+  "split": "test",
+  "scene": "ferry terminal photo",
+  "mode": "context_pair",
+  "recipe_group": "ACCEPT_CLEAR_OFFER",
+  "fixed_current_message": "Please do that.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p048_b",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer to explain the stored result. Do not write the assistant reply.",
+    "assistant_reply": "I am able to summarise the existing result. Do you want that?"
+   },
+   {
+    "slot_id": "fam2_test_p048_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer a fresh authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "I am able to carry out another authenticity check. Do you want that?"
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p049_pair",
+  "family_id": "fam2_test_p049",
+  "split": "test",
+  "scene": "bus rally photo",
+  "mode": "context_pair",
+  "recipe_group": "NEW_TARGET_CONTINUATION",
+  "fixed_current_message": "Now this one too.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    },
+    {
+     "id": "img_2",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_2",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p049_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to look at the first image in an ordinary way. Do not write the assistant reply.",
+    "assistant_reply": "I have described the first image: people posing together outdoors."
+   },
+   {
+    "slot_id": "fam2_test_p049_d",
+    "category": "new_image_or_mixed",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to check the first image for authenticity. Do not write the assistant reply.",
+    "assistant_reply": "The first image was checked and recorded as FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p050_pair",
+  "family_id": "fam2_test_p050",
+  "split": "test",
+  "scene": "chalk stream photo",
+  "mode": "context_pair",
+  "recipe_group": "REPEAT_PREVIOUS_OPERATION",
+  "fixed_current_message": "Do that once more.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p050_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to read the text in the image. Do not write the assistant reply.",
+    "assistant_reply": "The image text has been read again and has not changed."
+   },
+   {
+    "slot_id": "fam2_test_p050_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to run an authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "The check was repeated; the recorded verdict is FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p051_pair",
+  "family_id": "fam2_test_p051",
+  "split": "test",
+  "scene": "farmers market photo",
+  "mode": "context_pair",
+  "recipe_group": "ACCEPT_CLEAR_OFFER",
+  "fixed_current_message": "Please do that.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "REAL",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p051_b",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer to explain the stored result. Do not write the assistant reply.",
+    "assistant_reply": "Would it help if I summarise the existing result?"
+   },
+   {
+    "slot_id": "fam2_test_p051_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer a fresh authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "Would it help if I carry out another authenticity check?"
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p052_pair",
+  "family_id": "fam2_test_p052",
+  "split": "test",
+  "scene": "choir performance portrait",
+  "mode": "context_pair",
+  "recipe_group": "NEW_TARGET_CONTINUATION",
+  "fixed_current_message": "Now this one too.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    },
+    {
+     "id": "img_2",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_2",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p052_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to look at the first image in an ordinary way. Do not write the assistant reply.",
+    "assistant_reply": "I have described the first image: people posing together outdoors."
+   },
+   {
+    "slot_id": "fam2_test_p052_d",
+    "category": "new_image_or_mixed",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to check the first image for authenticity. Do not write the assistant reply.",
+    "assistant_reply": "The first image was checked and recorded as FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p053_pair",
+  "family_id": "fam2_test_p053",
+  "split": "test",
+  "scene": "mountain rescue team photo",
+  "mode": "context_pair",
+  "recipe_group": "REPEAT_PREVIOUS_OPERATION",
+  "fixed_current_message": "Do that once more.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "REAL",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p053_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to read the text in the image. Do not write the assistant reply.",
+    "assistant_reply": "The image text has been read again and has not changed."
+   },
+   {
+    "slot_id": "fam2_test_p053_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to run an authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "The check was repeated; the recorded verdict is REAL."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p054_pair",
+  "family_id": "fam2_test_p054",
+  "split": "test",
+  "scene": "community kitchen photo",
+  "mode": "context_pair",
+  "recipe_group": "ACCEPT_CLEAR_OFFER",
+  "fixed_current_message": "Please do that.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p054_b",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer to explain the stored result. Do not write the assistant reply.",
+    "assistant_reply": "I am able to summarise the existing result. Do you want that?"
+   },
+   {
+    "slot_id": "fam2_test_p054_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer a fresh authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "I am able to carry out another authenticity check. Do you want that?"
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p055_pair",
+  "family_id": "fam2_test_p055",
+  "split": "test",
+  "scene": "bookshop window photo",
+  "mode": "context_pair",
+  "recipe_group": "NEW_TARGET_CONTINUATION",
+  "fixed_current_message": "Now this one too.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    },
+    {
+     "id": "img_2",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_2",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p055_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to look at the first image in an ordinary way. Do not write the assistant reply.",
+    "assistant_reply": "I have described the first image: people posing together outdoors."
+   },
+   {
+    "slot_id": "fam2_test_p055_d",
+    "category": "new_image_or_mixed",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to check the first image for authenticity. Do not write the assistant reply.",
+    "assistant_reply": "The first image was checked and recorded as FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p056_pair",
+  "family_id": "fam2_test_p056",
+  "split": "test",
+  "scene": "swimming gala portrait",
+  "mode": "context_pair",
+  "recipe_group": "REPEAT_PREVIOUS_OPERATION",
+  "fixed_current_message": "Do that once more.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p056_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to read the text in the image. Do not write the assistant reply.",
+    "assistant_reply": "The image text has been read again and has not changed."
+   },
+   {
+    "slot_id": "fam2_test_p056_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to run an authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "The check was repeated; the recorded verdict is FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p057_pair",
+  "family_id": "fam2_test_p057",
+  "split": "test",
+  "scene": "repair cafe photo",
+  "mode": "context_pair",
+  "recipe_group": "ACCEPT_CLEAR_OFFER",
+  "fixed_current_message": "Please do that.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "REAL",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p057_b",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer to explain the stored result. Do not write the assistant reply.",
+    "assistant_reply": "Would it help if I summarise the existing result?"
+   },
+   {
+    "slot_id": "fam2_test_p057_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer a fresh authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "Would it help if I carry out another authenticity check?"
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p058_pair",
+  "family_id": "fam2_test_p058",
+  "split": "test",
+  "scene": "holiday cottage interior",
+  "mode": "context_pair",
+  "recipe_group": "NEW_TARGET_CONTINUATION",
+  "fixed_current_message": "Now this one too.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    },
+    {
+     "id": "img_2",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_2",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p058_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to look at the first image in an ordinary way. Do not write the assistant reply.",
+    "assistant_reply": "I have described the first image: people posing together outdoors."
+   },
+   {
+    "slot_id": "fam2_test_p058_d",
+    "category": "new_image_or_mixed",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to check the first image for authenticity. Do not write the assistant reply.",
+    "assistant_reply": "The first image was checked and recorded as FAKE."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p059_pair",
+  "family_id": "fam2_test_p059",
+  "split": "test",
+  "scene": "orchestra rehearsal photo",
+  "mode": "context_pair",
+  "recipe_group": "REPEAT_PREVIOUS_OPERATION",
+  "fixed_current_message": "Do that once more.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "REAL",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p059_b",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to read the text in the image. Do not write the assistant reply.",
+    "assistant_reply": "The image text has been read again and has not changed."
+   },
+   {
+    "slot_id": "fam2_test_p059_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that led the assistant to run an authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "The check was repeated; the recorded verdict is REAL."
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_p060_pair",
+  "family_id": "fam2_test_p060",
+  "split": "test",
+  "scene": "allotment garden photo",
+  "mode": "context_pair",
+  "recipe_group": "ACCEPT_CLEAR_OFFER",
+  "fixed_current_message": "Please do that.",
+  "runtime_state": {
+   "assets": [
+    {
+     "id": "img_1",
+     "kind": "image",
+     "availability": "available",
+     "support": "supported"
+    }
+   ],
+   "active_image_id": "img_1",
+   "last_analysis": {
+    "asset_id": "img_1",
+    "verdict": "FAKE",
+    "confidence": null,
+    "evidence_summary": [
+     "A prior authenticity report is available."
+    ]
+   }
+  },
+  "variants": [
+   {
+    "slot_id": "fam2_test_p060_b",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer to explain the stored result. Do not write the assistant reply.",
+    "assistant_reply": "I am able to summarise the existing result. Do you want that?"
+   },
+   {
+    "slot_id": "fam2_test_p060_d",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write the ONE earlier user request that made the assistant offer a fresh authenticity check. Do not write the assistant reply.",
+    "assistant_reply": "I am able to carry out another authenticity check. Do you want that?"
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s061_single",
+  "family_id": "fam2_test_s061",
+  "split": "test",
+  "scene": "farmers market photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_general_chat",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s061_1",
+    "category": "general_chat",
+    "intended_route": "BASE",
+    "request_brief": "Write one short ordinary request in this scenario that needs no image: wording, planning or an everyday explanation. No authenticity checking.",
+    "runtime_state": {
+     "assets": [],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s061_2",
+    "category": "general_chat",
+    "intended_route": "BASE",
+    "request_brief": "Write one short ordinary request in this scenario that needs no image: wording, planning or an everyday explanation. No authenticity checking.",
+    "runtime_state": {
+     "assets": [],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s061_3",
+    "category": "general_chat",
+    "intended_route": "BASE",
+    "request_brief": "Write one short ordinary request in this scenario that needs no image: wording, planning or an everyday explanation. No authenticity checking.",
+    "runtime_state": {
+     "assets": [],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s061_4",
+    "category": "general_chat",
+    "intended_route": "BASE",
+    "request_brief": "Write one short ordinary request in this scenario that needs no image: wording, planning or an everyday explanation. No authenticity checking.",
+    "runtime_state": {
+     "assets": [],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s062_single",
+  "family_id": "fam2_test_s062",
+  "split": "test",
+  "scene": "choir performance portrait",
+  "mode": "single",
+  "recipe_group": "SINGLE_general_chat",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s062_1",
+    "category": "general_chat",
+    "intended_route": "BASE",
+    "request_brief": "Write one short ordinary request in this scenario that needs no image: wording, planning or an everyday explanation. No authenticity checking.",
+    "runtime_state": {
+     "assets": [],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s062_2",
+    "category": "general_chat",
+    "intended_route": "BASE",
+    "request_brief": "Write one short ordinary request in this scenario that needs no image: wording, planning or an everyday explanation. No authenticity checking.",
+    "runtime_state": {
+     "assets": [],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s062_3",
+    "category": "general_chat",
+    "intended_route": "BASE",
+    "request_brief": "Write one short ordinary request in this scenario that needs no image: wording, planning or an everyday explanation. No authenticity checking.",
+    "runtime_state": {
+     "assets": [],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s062_4",
+    "category": "general_chat",
+    "intended_route": "BASE",
+    "request_brief": "Write one short ordinary request in this scenario that needs no image: wording, planning or an everyday explanation. No authenticity checking.",
+    "runtime_state": {
+     "assets": [],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s063_single",
+  "family_id": "fam2_test_s063",
+  "split": "test",
+  "scene": "mountain rescue team photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_general_chat",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s063_1",
+    "category": "general_chat",
+    "intended_route": "BASE",
+    "request_brief": "Write one short ordinary request in this scenario that needs no image: wording, planning or an everyday explanation. No authenticity checking.",
+    "runtime_state": {
+     "assets": [],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s063_2",
+    "category": "general_chat",
+    "intended_route": "BASE",
+    "request_brief": "Write one short ordinary request in this scenario that needs no image: wording, planning or an everyday explanation. No authenticity checking.",
+    "runtime_state": {
+     "assets": [],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s063_3",
+    "category": "general_chat",
+    "intended_route": "BASE",
+    "request_brief": "Write one short ordinary request in this scenario that needs no image: wording, planning or an everyday explanation. No authenticity checking.",
+    "runtime_state": {
+     "assets": [],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s063_4",
+    "category": "general_chat",
+    "intended_route": "BASE",
+    "request_brief": "Write one short ordinary request in this scenario that needs no image: wording, planning or an everyday explanation. No authenticity checking.",
+    "runtime_state": {
+     "assets": [],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s064_single",
+  "family_id": "fam2_test_s064",
+  "split": "test",
+  "scene": "community kitchen photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_general_chat",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s064_1",
+    "category": "general_chat",
+    "intended_route": "BASE",
+    "request_brief": "Write one short ordinary request in this scenario that needs no image: wording, planning or an everyday explanation. No authenticity checking.",
+    "runtime_state": {
+     "assets": [],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s064_2",
+    "category": "general_chat",
+    "intended_route": "BASE",
+    "request_brief": "Write one short ordinary request in this scenario that needs no image: wording, planning or an everyday explanation. No authenticity checking.",
+    "runtime_state": {
+     "assets": [],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s064_3",
+    "category": "general_chat",
+    "intended_route": "BASE",
+    "request_brief": "Write one short ordinary request in this scenario that needs no image: wording, planning or an everyday explanation. No authenticity checking.",
+    "runtime_state": {
+     "assets": [],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s064_4",
+    "category": "general_chat",
+    "intended_route": "BASE",
+    "request_brief": "Write one short ordinary request in this scenario that needs no image: wording, planning or an everyday explanation. No authenticity checking.",
+    "runtime_state": {
+     "assets": [],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s065_single",
+  "family_id": "fam2_test_s065",
+  "split": "test",
+  "scene": "bookshop window photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_general_chat",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s065_1",
+    "category": "general_chat",
+    "intended_route": "BASE",
+    "request_brief": "Write one short ordinary request in this scenario that needs no image: wording, planning or an everyday explanation. No authenticity checking.",
+    "runtime_state": {
+     "assets": [],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s065_2",
+    "category": "general_chat",
+    "intended_route": "BASE",
+    "request_brief": "Write one short ordinary request in this scenario that needs no image: wording, planning or an everyday explanation. No authenticity checking.",
+    "runtime_state": {
+     "assets": [],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s065_3",
+    "category": "general_chat",
+    "intended_route": "BASE",
+    "request_brief": "Write one short ordinary request in this scenario that needs no image: wording, planning or an everyday explanation. No authenticity checking.",
+    "runtime_state": {
+     "assets": [],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s065_4",
+    "category": "general_chat",
+    "intended_route": "BASE",
+    "request_brief": "Write one short ordinary request in this scenario that needs no image: wording, planning or an everyday explanation. No authenticity checking.",
+    "runtime_state": {
+     "assets": [],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s066_single",
+  "family_id": "fam2_test_s066",
+  "split": "test",
+  "scene": "swimming gala portrait",
+  "mode": "single",
+  "recipe_group": "SINGLE_general_chat",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s066_1",
+    "category": "general_chat",
+    "intended_route": "BASE",
+    "request_brief": "Write one short ordinary request in this scenario that needs no image: wording, planning or an everyday explanation. No authenticity checking.",
+    "runtime_state": {
+     "assets": [],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s066_2",
+    "category": "general_chat",
+    "intended_route": "BASE",
+    "request_brief": "Write one short ordinary request in this scenario that needs no image: wording, planning or an everyday explanation. No authenticity checking.",
+    "runtime_state": {
+     "assets": [],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s066_3",
+    "category": "general_chat",
+    "intended_route": "BASE",
+    "request_brief": "Write one short ordinary request in this scenario that needs no image: wording, planning or an everyday explanation. No authenticity checking.",
+    "runtime_state": {
+     "assets": [],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s066_4",
+    "category": "general_chat",
+    "intended_route": "BASE",
+    "request_brief": "Write one short ordinary request in this scenario that needs no image: wording, planning or an everyday explanation. No authenticity checking.",
+    "runtime_state": {
+     "assets": [],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s067_single",
+  "family_id": "fam2_test_s067",
+  "split": "test",
+  "scene": "repair cafe photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_ordinary_image",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s067_1",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request about appearance, content or a caption of the attached image. Do not ask about authenticity or manipulation.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s067_2",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request about appearance, content or a caption of the attached image. Do not ask about authenticity or manipulation.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s067_3",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request about appearance, content or a caption of the attached image. Do not ask about authenticity or manipulation.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s067_4",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request about appearance, content or a caption of the attached image. Do not ask about authenticity or manipulation.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s068_single",
+  "family_id": "fam2_test_s068",
+  "split": "test",
+  "scene": "holiday cottage interior",
+  "mode": "single",
+  "recipe_group": "SINGLE_ordinary_image",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s068_1",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request about appearance, content or a caption of the attached image. Do not ask about authenticity or manipulation.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s068_2",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request about appearance, content or a caption of the attached image. Do not ask about authenticity or manipulation.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s068_3",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request about appearance, content or a caption of the attached image. Do not ask about authenticity or manipulation.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s068_4",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request about appearance, content or a caption of the attached image. Do not ask about authenticity or manipulation.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s069_single",
+  "family_id": "fam2_test_s069",
+  "split": "test",
+  "scene": "orchestra rehearsal photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_ordinary_image",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s069_1",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request about appearance, content or a caption of the attached image. Do not ask about authenticity or manipulation.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s069_2",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request about appearance, content or a caption of the attached image. Do not ask about authenticity or manipulation.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s069_3",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request about appearance, content or a caption of the attached image. Do not ask about authenticity or manipulation.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s069_4",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request about appearance, content or a caption of the attached image. Do not ask about authenticity or manipulation.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s070_single",
+  "family_id": "fam2_test_s070",
+  "split": "test",
+  "scene": "allotment garden photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_ordinary_image",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s070_1",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request about appearance, content or a caption of the attached image. Do not ask about authenticity or manipulation.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s070_2",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request about appearance, content or a caption of the attached image. Do not ask about authenticity or manipulation.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s070_3",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request about appearance, content or a caption of the attached image. Do not ask about authenticity or manipulation.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s070_4",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request about appearance, content or a caption of the attached image. Do not ask about authenticity or manipulation.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s071_single",
+  "family_id": "fam2_test_s071",
+  "split": "test",
+  "scene": "village fete poster",
+  "mode": "single",
+  "recipe_group": "SINGLE_ordinary_image",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s071_1",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request about appearance, content or a caption of the attached image. Do not ask about authenticity or manipulation.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s071_2",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request about appearance, content or a caption of the attached image. Do not ask about authenticity or manipulation.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s071_3",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request about appearance, content or a caption of the attached image. Do not ask about authenticity or manipulation.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s071_4",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request about appearance, content or a caption of the attached image. Do not ask about authenticity or manipulation.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s072_single",
+  "family_id": "fam2_test_s072",
+  "split": "test",
+  "scene": "birdwatching photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_ordinary_image",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s072_1",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request about appearance, content or a caption of the attached image. Do not ask about authenticity or manipulation.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s072_2",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request about appearance, content or a caption of the attached image. Do not ask about authenticity or manipulation.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s072_3",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request about appearance, content or a caption of the attached image. Do not ask about authenticity or manipulation.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s072_4",
+    "category": "ordinary_image",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request about appearance, content or a caption of the attached image. Do not ask about authenticity or manipulation.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s073_single",
+  "family_id": "fam2_test_s073",
+  "split": "test",
+  "scene": "drama rehearsal portrait",
+  "mode": "single",
+  "recipe_group": "SINGLE_conceptual_authenticity",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s073_1",
+    "category": "conceptual_authenticity",
+    "intended_route": "BASE",
+    "request_brief": "Write one short conceptual question about deepfakes, synthetic media or detectors. Do not ask to check the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s073_2",
+    "category": "conceptual_authenticity",
+    "intended_route": "BASE",
+    "request_brief": "Write one short conceptual question about deepfakes, synthetic media or detectors. Do not ask to check the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s073_3",
+    "category": "conceptual_authenticity",
+    "intended_route": "BASE",
+    "request_brief": "Write one short conceptual question about deepfakes, synthetic media or detectors. Do not ask to check the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s073_4",
+    "category": "conceptual_authenticity",
+    "intended_route": "BASE",
+    "request_brief": "Write one short conceptual question about deepfakes, synthetic media or detectors. Do not ask to check the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s074_single",
+  "family_id": "fam2_test_s074",
+  "split": "test",
+  "scene": "food bank parcel photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_conceptual_authenticity",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s074_1",
+    "category": "conceptual_authenticity",
+    "intended_route": "BASE",
+    "request_brief": "Write one short conceptual question about deepfakes, synthetic media or detectors. Do not ask to check the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s074_2",
+    "category": "conceptual_authenticity",
+    "intended_route": "BASE",
+    "request_brief": "Write one short conceptual question about deepfakes, synthetic media or detectors. Do not ask to check the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s074_3",
+    "category": "conceptual_authenticity",
+    "intended_route": "BASE",
+    "request_brief": "Write one short conceptual question about deepfakes, synthetic media or detectors. Do not ask to check the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s074_4",
+    "category": "conceptual_authenticity",
+    "intended_route": "BASE",
+    "request_brief": "Write one short conceptual question about deepfakes, synthetic media or detectors. Do not ask to check the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s075_single",
+  "family_id": "fam2_test_s075",
+  "split": "test",
+  "scene": "windmill photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_conceptual_authenticity",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s075_1",
+    "category": "conceptual_authenticity",
+    "intended_route": "BASE",
+    "request_brief": "Write one short conceptual question about deepfakes, synthetic media or detectors. Do not ask to check the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s075_2",
+    "category": "conceptual_authenticity",
+    "intended_route": "BASE",
+    "request_brief": "Write one short conceptual question about deepfakes, synthetic media or detectors. Do not ask to check the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s075_3",
+    "category": "conceptual_authenticity",
+    "intended_route": "BASE",
+    "request_brief": "Write one short conceptual question about deepfakes, synthetic media or detectors. Do not ask to check the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s075_4",
+    "category": "conceptual_authenticity",
+    "intended_route": "BASE",
+    "request_brief": "Write one short conceptual question about deepfakes, synthetic media or detectors. Do not ask to check the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s076_single",
+  "family_id": "fam2_test_s076",
+  "split": "test",
+  "scene": "tram stop photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_conceptual_authenticity",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s076_1",
+    "category": "conceptual_authenticity",
+    "intended_route": "BASE",
+    "request_brief": "Write one short conceptual question about deepfakes, synthetic media or detectors. Do not ask to check the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s076_2",
+    "category": "conceptual_authenticity",
+    "intended_route": "BASE",
+    "request_brief": "Write one short conceptual question about deepfakes, synthetic media or detectors. Do not ask to check the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s076_3",
+    "category": "conceptual_authenticity",
+    "intended_route": "BASE",
+    "request_brief": "Write one short conceptual question about deepfakes, synthetic media or detectors. Do not ask to check the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s076_4",
+    "category": "conceptual_authenticity",
+    "intended_route": "BASE",
+    "request_brief": "Write one short conceptual question about deepfakes, synthetic media or detectors. Do not ask to check the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s077_single",
+  "family_id": "fam2_test_s077",
+  "split": "test",
+  "scene": "archive reading room photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_negation_quotes_injection",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s077_1",
+    "category": "negation_quotes_injection",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request that mentions a detector, a quoted command or a quoted phrase but whose actual task is translate/read/explain/describe.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s077_2",
+    "category": "negation_quotes_injection",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request that mentions a detector, a quoted command or a quoted phrase but whose actual task is translate/read/explain/describe.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s077_3",
+    "category": "negation_quotes_injection",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request that mentions a detector, a quoted command or a quoted phrase but whose actual task is translate/read/explain/describe.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s077_4",
+    "category": "negation_quotes_injection",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request that mentions a detector, a quoted command or a quoted phrase but whose actual task is translate/read/explain/describe.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s078_single",
+  "family_id": "fam2_test_s078",
+  "split": "test",
+  "scene": "coastal path photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_negation_quotes_injection",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s078_1",
+    "category": "negation_quotes_injection",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request that mentions a detector, a quoted command or a quoted phrase but whose actual task is translate/read/explain/describe.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s078_2",
+    "category": "negation_quotes_injection",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request that mentions a detector, a quoted command or a quoted phrase but whose actual task is translate/read/explain/describe.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s078_3",
+    "category": "negation_quotes_injection",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request that mentions a detector, a quoted command or a quoted phrase but whose actual task is translate/read/explain/describe.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s078_4",
+    "category": "negation_quotes_injection",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request that mentions a detector, a quoted command or a quoted phrase but whose actual task is translate/read/explain/describe.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s079_single",
+  "family_id": "fam2_test_s079",
+  "split": "test",
+  "scene": "school library photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_negation_quotes_injection",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s079_1",
+    "category": "negation_quotes_injection",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request that mentions a detector, a quoted command or a quoted phrase but whose actual task is translate/read/explain/describe.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s079_2",
+    "category": "negation_quotes_injection",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request that mentions a detector, a quoted command or a quoted phrase but whose actual task is translate/read/explain/describe.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s079_3",
+    "category": "negation_quotes_injection",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request that mentions a detector, a quoted command or a quoted phrase but whose actual task is translate/read/explain/describe.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s079_4",
+    "category": "negation_quotes_injection",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request that mentions a detector, a quoted command or a quoted phrase but whose actual task is translate/read/explain/describe.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s080_single",
+  "family_id": "fam2_test_s080",
+  "split": "test",
+  "scene": "pottery fair photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_negation_quotes_injection",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s080_1",
+    "category": "negation_quotes_injection",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request that mentions a detector, a quoted command or a quoted phrase but whose actual task is translate/read/explain/describe.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s080_2",
+    "category": "negation_quotes_injection",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request that mentions a detector, a quoted command or a quoted phrase but whose actual task is translate/read/explain/describe.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s080_3",
+    "category": "negation_quotes_injection",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request that mentions a detector, a quoted command or a quoted phrase but whose actual task is translate/read/explain/describe.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s080_4",
+    "category": "negation_quotes_injection",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request that mentions a detector, a quoted command or a quoted phrase but whose actual task is translate/read/explain/describe.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s081_single",
+  "family_id": "fam2_test_s081",
+  "split": "test",
+  "scene": "community orchard photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_clarify_or_unsupported",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s081_1",
+    "category": "clarify_or_unsupported",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request asking for a real/fake check on the image the user thinks is attached. Do not mention metadata or availability.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "clip_1",
+       "kind": "video",
+       "availability": "available",
+       "support": "unsupported"
+      }
+     ],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s081_2",
+    "category": "clarify_or_unsupported",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request asking for a real/fake check on the image the user thinks is attached. Do not mention metadata or availability.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "clip_1",
+       "kind": "video",
+       "availability": "available",
+       "support": "unsupported"
+      }
+     ],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s081_3",
+    "category": "clarify_or_unsupported",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request asking for a real/fake check on the image the user thinks is attached. Do not mention metadata or availability.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "clip_1",
+       "kind": "video",
+       "availability": "available",
+       "support": "unsupported"
+      }
+     ],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s081_4",
+    "category": "clarify_or_unsupported",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request asking for a real/fake check on the image the user thinks is attached. Do not mention metadata or availability.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "clip_1",
+       "kind": "video",
+       "availability": "available",
+       "support": "unsupported"
+      }
+     ],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s082_single",
+  "family_id": "fam2_test_s082",
+  "split": "test",
+  "scene": "lamplight procession photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_clarify_or_unsupported",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s082_1",
+    "category": "clarify_or_unsupported",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request asking for a real/fake check on the image the user thinks is attached. Do not mention metadata or availability.",
+    "runtime_state": {
+     "assets": [],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s082_2",
+    "category": "clarify_or_unsupported",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request asking for a real/fake check on the image the user thinks is attached. Do not mention metadata or availability.",
+    "runtime_state": {
+     "assets": [],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s082_3",
+    "category": "clarify_or_unsupported",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request asking for a real/fake check on the image the user thinks is attached. Do not mention metadata or availability.",
+    "runtime_state": {
+     "assets": [],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s082_4",
+    "category": "clarify_or_unsupported",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request asking for a real/fake check on the image the user thinks is attached. Do not mention metadata or availability.",
+    "runtime_state": {
+     "assets": [],
+     "active_image_id": null,
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s083_single",
+  "family_id": "fam2_test_s083",
+  "split": "test",
+  "scene": "boxing club photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_clarify_or_unsupported",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s083_1",
+    "category": "clarify_or_unsupported",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request asking for a real/fake check on the image the user thinks is attached. Do not mention metadata or availability.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "missing",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s083_2",
+    "category": "clarify_or_unsupported",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request asking for a real/fake check on the image the user thinks is attached. Do not mention metadata or availability.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "missing",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s083_3",
+    "category": "clarify_or_unsupported",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request asking for a real/fake check on the image the user thinks is attached. Do not mention metadata or availability.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "missing",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s083_4",
+    "category": "clarify_or_unsupported",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request asking for a real/fake check on the image the user thinks is attached. Do not mention metadata or availability.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "missing",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s084_single",
+  "family_id": "fam2_test_s084",
+  "split": "test",
+  "scene": "bake off photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_clarify_or_unsupported",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s084_1",
+    "category": "clarify_or_unsupported",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request asking for a real/fake check on the image the user thinks is attached. Do not mention metadata or availability.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "expired",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s084_2",
+    "category": "clarify_or_unsupported",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request asking for a real/fake check on the image the user thinks is attached. Do not mention metadata or availability.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "expired",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s084_3",
+    "category": "clarify_or_unsupported",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request asking for a real/fake check on the image the user thinks is attached. Do not mention metadata or availability.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "expired",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s084_4",
+    "category": "clarify_or_unsupported",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request asking for a real/fake check on the image the user thinks is attached. Do not mention metadata or availability.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "expired",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s085_single",
+  "family_id": "fam2_test_s085",
+  "split": "test",
+  "scene": "salvation army band photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_clarify_or_unsupported",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s085_1",
+    "category": "clarify_or_unsupported",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request asking for a real/fake check on the image the user thinks is attached. Do not mention metadata or availability.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "unsupported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s085_2",
+    "category": "clarify_or_unsupported",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request asking for a real/fake check on the image the user thinks is attached. Do not mention metadata or availability.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "unsupported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s085_3",
+    "category": "clarify_or_unsupported",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request asking for a real/fake check on the image the user thinks is attached. Do not mention metadata or availability.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "unsupported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s085_4",
+    "category": "clarify_or_unsupported",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request asking for a real/fake check on the image the user thinks is attached. Do not mention metadata or availability.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "unsupported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s086_single",
+  "family_id": "fam2_test_s086",
+  "split": "test",
+  "scene": "botanical glasshouse photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_explain_existing",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s086_1",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request to explain or summarise the EXISTING stored verdict in plain language. Do not ask for a new check.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "FAKE",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   },
+   {
+    "slot_id": "fam2_test_s086_2",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request to explain or summarise the EXISTING stored verdict in plain language. Do not ask for a new check.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "FAKE",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   },
+   {
+    "slot_id": "fam2_test_s086_3",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request to explain or summarise the EXISTING stored verdict in plain language. Do not ask for a new check.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "FAKE",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   },
+   {
+    "slot_id": "fam2_test_s086_4",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request to explain or summarise the EXISTING stored verdict in plain language. Do not ask for a new check.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "FAKE",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s087_single",
+  "family_id": "fam2_test_s087",
+  "split": "test",
+  "scene": "market cross photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_explain_existing",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s087_1",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request to explain or summarise the EXISTING stored verdict in plain language. Do not ask for a new check.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "REAL",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   },
+   {
+    "slot_id": "fam2_test_s087_2",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request to explain or summarise the EXISTING stored verdict in plain language. Do not ask for a new check.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "REAL",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   },
+   {
+    "slot_id": "fam2_test_s087_3",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request to explain or summarise the EXISTING stored verdict in plain language. Do not ask for a new check.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "REAL",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   },
+   {
+    "slot_id": "fam2_test_s087_4",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request to explain or summarise the EXISTING stored verdict in plain language. Do not ask for a new check.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "REAL",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s088_single",
+  "family_id": "fam2_test_s088",
+  "split": "test",
+  "scene": "fishing harbour photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_explain_existing",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s088_1",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request to explain or summarise the EXISTING stored verdict in plain language. Do not ask for a new check.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "FAKE",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   },
+   {
+    "slot_id": "fam2_test_s088_2",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request to explain or summarise the EXISTING stored verdict in plain language. Do not ask for a new check.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "FAKE",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   },
+   {
+    "slot_id": "fam2_test_s088_3",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request to explain or summarise the EXISTING stored verdict in plain language. Do not ask for a new check.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "FAKE",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   },
+   {
+    "slot_id": "fam2_test_s088_4",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request to explain or summarise the EXISTING stored verdict in plain language. Do not ask for a new check.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "FAKE",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s089_single",
+  "family_id": "fam2_test_s089",
+  "split": "test",
+  "scene": "rowing regatta photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_explain_existing",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s089_1",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request to explain or summarise the EXISTING stored verdict in plain language. Do not ask for a new check.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "REAL",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   },
+   {
+    "slot_id": "fam2_test_s089_2",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request to explain or summarise the EXISTING stored verdict in plain language. Do not ask for a new check.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "REAL",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   },
+   {
+    "slot_id": "fam2_test_s089_3",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request to explain or summarise the EXISTING stored verdict in plain language. Do not ask for a new check.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "REAL",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   },
+   {
+    "slot_id": "fam2_test_s089_4",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request to explain or summarise the EXISTING stored verdict in plain language. Do not ask for a new check.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "REAL",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s090_single",
+  "family_id": "fam2_test_s090",
+  "split": "test",
+  "scene": "heritage railway photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_explain_existing",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s090_1",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request to explain or summarise the EXISTING stored verdict in plain language. Do not ask for a new check.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "FAKE",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   },
+   {
+    "slot_id": "fam2_test_s090_2",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request to explain or summarise the EXISTING stored verdict in plain language. Do not ask for a new check.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "FAKE",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   },
+   {
+    "slot_id": "fam2_test_s090_3",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request to explain or summarise the EXISTING stored verdict in plain language. Do not ask for a new check.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "FAKE",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   },
+   {
+    "slot_id": "fam2_test_s090_4",
+    "category": "explain_existing",
+    "intended_route": "BASE",
+    "request_brief": "Write one short request to explain or summarise the EXISTING stored verdict in plain language. Do not ask for a new check.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "FAKE",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s091_single",
+  "family_id": "fam2_test_s091",
+  "split": "test",
+  "scene": "castle grounds photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_explicit_authenticity",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s091_1",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s091_2",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s091_3",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s091_4",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s092_single",
+  "family_id": "fam2_test_s092",
+  "split": "test",
+  "scene": "cider press photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_explicit_authenticity",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s092_1",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s092_2",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s092_3",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s092_4",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s093_single",
+  "family_id": "fam2_test_s093",
+  "split": "test",
+  "scene": "knitting circle photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_explicit_authenticity",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s093_1",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s093_2",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s093_3",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s093_4",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s094_single",
+  "family_id": "fam2_test_s094",
+  "split": "test",
+  "scene": "market research stand photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_explicit_authenticity",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s094_1",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s094_2",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s094_3",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s094_4",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s095_single",
+  "family_id": "fam2_test_s095",
+  "split": "test",
+  "scene": "lighthouse photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_explicit_authenticity",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s095_1",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s095_2",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s095_3",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s095_4",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s096_single",
+  "family_id": "fam2_test_s096",
+  "split": "test",
+  "scene": "mining museum photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_explicit_authenticity",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s096_1",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s096_2",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s096_3",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s096_4",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s097_single",
+  "family_id": "fam2_test_s097",
+  "split": "test",
+  "scene": "coracle race photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_explicit_authenticity",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s097_1",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s097_2",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s097_3",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s097_4",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s098_single",
+  "family_id": "fam2_test_s098",
+  "split": "test",
+  "scene": "town crier photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_explicit_authenticity",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s098_1",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s098_2",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s098_3",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s098_4",
+    "category": "explicit_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s099_single",
+  "family_id": "fam2_test_s099",
+  "split": "test",
+  "scene": "apple day photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_indirect_authenticity",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s099_1",
+    "category": "indirect_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short request where the user sounds suspicious about the attached image and wants it verified, without saying \"deepfake\" or \"real or fake\".",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s099_2",
+    "category": "indirect_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short request where the user sounds suspicious about the attached image and wants it verified, without saying \"deepfake\" or \"real or fake\".",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s099_3",
+    "category": "indirect_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short request where the user sounds suspicious about the attached image and wants it verified, without saying \"deepfake\" or \"real or fake\".",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s099_4",
+    "category": "indirect_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short request where the user sounds suspicious about the attached image and wants it verified, without saying \"deepfake\" or \"real or fake\".",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s100_single",
+  "family_id": "fam2_test_s100",
+  "split": "test",
+  "scene": "wetland boardwalk photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_indirect_authenticity",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s100_1",
+    "category": "indirect_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short request where the user sounds suspicious about the attached image and wants it verified, without saying \"deepfake\" or \"real or fake\".",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s100_2",
+    "category": "indirect_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short request where the user sounds suspicious about the attached image and wants it verified, without saying \"deepfake\" or \"real or fake\".",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s100_3",
+    "category": "indirect_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short request where the user sounds suspicious about the attached image and wants it verified, without saying \"deepfake\" or \"real or fake\".",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s100_4",
+    "category": "indirect_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short request where the user sounds suspicious about the attached image and wants it verified, without saying \"deepfake\" or \"real or fake\".",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s101_single",
+  "family_id": "fam2_test_s101",
+  "split": "test",
+  "scene": "garden railway photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_indirect_authenticity",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s101_1",
+    "category": "indirect_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short request where the user sounds suspicious about the attached image and wants it verified, without saying \"deepfake\" or \"real or fake\".",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s101_2",
+    "category": "indirect_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short request where the user sounds suspicious about the attached image and wants it verified, without saying \"deepfake\" or \"real or fake\".",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s101_3",
+    "category": "indirect_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short request where the user sounds suspicious about the attached image and wants it verified, without saying \"deepfake\" or \"real or fake\".",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s101_4",
+    "category": "indirect_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short request where the user sounds suspicious about the attached image and wants it verified, without saying \"deepfake\" or \"real or fake\".",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s102_single",
+  "family_id": "fam2_test_s102",
+  "split": "test",
+  "scene": "sheepdog trial photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_indirect_authenticity",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s102_1",
+    "category": "indirect_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short request where the user sounds suspicious about the attached image and wants it verified, without saying \"deepfake\" or \"real or fake\".",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s102_2",
+    "category": "indirect_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short request where the user sounds suspicious about the attached image and wants it verified, without saying \"deepfake\" or \"real or fake\".",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s102_3",
+    "category": "indirect_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short request where the user sounds suspicious about the attached image and wants it verified, without saying \"deepfake\" or \"real or fake\".",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   },
+   {
+    "slot_id": "fam2_test_s102_4",
+    "category": "indirect_authenticity",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short request where the user sounds suspicious about the attached image and wants it verified, without saying \"deepfake\" or \"real or fake\".",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": null
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s103_single",
+  "family_id": "fam2_test_s103",
+  "split": "test",
+  "scene": "carnival float photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_explicit_reanalysis",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s103_1",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short request to run the authenticity check AGAIN on the same image, rather than explaining the old result.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "REAL",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   },
+   {
+    "slot_id": "fam2_test_s103_2",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short request to run the authenticity check AGAIN on the same image, rather than explaining the old result.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "REAL",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   },
+   {
+    "slot_id": "fam2_test_s103_3",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short request to run the authenticity check AGAIN on the same image, rather than explaining the old result.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "REAL",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   },
+   {
+    "slot_id": "fam2_test_s103_4",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short request to run the authenticity check AGAIN on the same image, rather than explaining the old result.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "REAL",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s104_single",
+  "family_id": "fam2_test_s104",
+  "split": "test",
+  "scene": "beekeepers market photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_explicit_reanalysis",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s104_1",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short request to run the authenticity check AGAIN on the same image, rather than explaining the old result.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "FAKE",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   },
+   {
+    "slot_id": "fam2_test_s104_2",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short request to run the authenticity check AGAIN on the same image, rather than explaining the old result.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "FAKE",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   },
+   {
+    "slot_id": "fam2_test_s104_3",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short request to run the authenticity check AGAIN on the same image, rather than explaining the old result.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "FAKE",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   },
+   {
+    "slot_id": "fam2_test_s104_4",
+    "category": "explicit_reanalysis",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short request to run the authenticity check AGAIN on the same image, rather than explaining the old result.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_1",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "FAKE",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   }
+  ]
+ },
+ {
+  "job_id": "fam2_test_s105_single",
+  "family_id": "fam2_test_s105",
+  "split": "test",
+  "scene": "pier fireworks photo",
+  "mode": "single",
+  "recipe_group": "SINGLE_new_image_or_mixed",
+  "fixed_current_message": null,
+  "variants": [
+   {
+    "slot_id": "fam2_test_s105_1",
+    "category": "new_image_or_mixed",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short request for a verdict on the newly selected image, optionally combined with a caption or reading task.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "missing",
+       "support": "supported"
+      },
+      {
+       "id": "img_2",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_2",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "FAKE",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   },
+   {
+    "slot_id": "fam2_test_s105_2",
+    "category": "new_image_or_mixed",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short request for a verdict on the newly selected image, optionally combined with a caption or reading task.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "missing",
+       "support": "supported"
+      },
+      {
+       "id": "img_2",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_2",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "FAKE",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   },
+   {
+    "slot_id": "fam2_test_s105_3",
+    "category": "new_image_or_mixed",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short request for a verdict on the newly selected image, optionally combined with a caption or reading task.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "missing",
+       "support": "supported"
+      },
+      {
+       "id": "img_2",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_2",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "FAKE",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   },
+   {
+    "slot_id": "fam2_test_s105_4",
+    "category": "new_image_or_mixed",
+    "intended_route": "DEEPFAKE",
+    "request_brief": "Write one short request for a verdict on the newly selected image, optionally combined with a caption or reading task.",
+    "runtime_state": {
+     "assets": [
+      {
+       "id": "img_1",
+       "kind": "image",
+       "availability": "missing",
+       "support": "supported"
+      },
+      {
+       "id": "img_2",
+       "kind": "image",
+       "availability": "available",
+       "support": "supported"
+      }
+     ],
+     "active_image_id": "img_2",
+     "last_analysis": {
+      "asset_id": "img_1",
+      "verdict": "FAKE",
+      "confidence": null,
+      "evidence_summary": [
+       "A prior authenticity report is available."
+      ]
+     }
+    }
+   }
+  ]
+ }
+]

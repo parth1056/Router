@@ -1,0 +1,42 @@
+{
+  "mode": "corpus2_blind_critic",
+  "model": "gemma3:27b-it-q4_K_M",
+  "model_digest": "6be2e2ba6843b9255820e2de2cbbe75cfdef0294ac7a531572e654d6e0eefe7d",
+  "model_metadata": {
+    "name": "gemma3:27b-it-q4_K_M",
+    "model": "gemma3:27b-it-q4_K_M",
+    "modified_at": "2026-11-16T20:21:59.4055322+05:30",
+    "size": 17413409652,
+    "digest": "6be2e2ba6843b9255820e2de2cbbe75cfdef0294ac7a531572e654d6e0eefe7d",
+    "details": {
+      "parent_model": "dhiltgen/gemma3:27b-it-q4_K_M-llamacpp",
+      "format": "gguf",
+      "family": "gemma3",
+      "families": [
+        "gemma3",
+        "clip"
+      ],
+      "parameter_size": "27.0B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 131072,
+      "embedding_length": 5376,
+      "runner": "llamacpp"
+    },
+    "capabilities": [
+      "completion",
+      "vision"
+    ]
+  },
+  "inputs_sha256": "195654345ac0f4efefcc5b1674ef8ef90c1deba7298695cc0d639e48d0e96fc6",
+  "policy_sha256": "48dfb3f7bcded8227e67e2bc02afc7656cb6131064a809d7f90616210f1787ca",
+  "options": {
+    "temperature": 0.0,
+    "seed": 20261116,
+    "num_ctx": 4096,
+    "num_predict": 384,
+    "top_p": 0.9,
+    "repeat_penalty": 1.0
+  },
+  "labels_supplied": false,
+  "runner_sha256": "9358ac6044afbc399eff7839a43dd2e43ca4e6291d8c1c47becac1ddf0cd4b3a"
+}

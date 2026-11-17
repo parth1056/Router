@@ -1,0 +1,15 @@
+{
+  "n": 200,
+  "tp": 74,
+  "tn": 44,
+  "fp": 82,
+  "fn": 0,
+  "accuracy": 0.59,
+  "macro_f1": 0.5805626598465473,
+  "deepfake_precision": 0.47435897435897434,
+  "deepfake_recall": 1.0,
+  "deepfake_f1": 0.6434782608695652,
+  "base_false_activation_rate": 0.6507936507936508,
+  "nll": 0.6515057052969279,
+  "brier": 0.23099620648925268
+}

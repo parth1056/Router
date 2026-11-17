@@ -1,0 +1,156 @@
+{
+  "wording": {
+    "train": {
+      "continuations": {
+        "NEW_TARGET_CONTINUATION": [
+          "And this one?"
+        ],
+        "REPEAT_PREVIOUS_OPERATION": [
+          "Check it again, please."
+        ],
+        "ACCEPT_CLEAR_OFFER": [
+          "Yes, please do that.",
+          "Go ahead with that."
+        ]
+      },
+      "frames": [
+        "I can {action}. Would you like me to?",
+        "Would you like me to {action}?"
+      ],
+      "base_action": "explain the stored result",
+      "deepfake_action": "run a fresh authenticity check on it",
+      "repeat_base": "I read the text in the image again: it is unchanged.",
+      "repeat_deepfake": "I ran the authenticity check again; the recorded verdict is {verdict}.",
+      "new_base": "I described the first image: people are standing together in daylight.",
+      "new_deepfake": "I checked the first image earlier; the recorded verdict is {verdict}."
+    },
+    "dev": {
+      "continuations": {
+        "NEW_TARGET_CONTINUATION": [
+          "What about this next one?"
+        ],
+        "REPEAT_PREVIOUS_OPERATION": [
+          "Could you repeat that, please?"
+        ],
+        "ACCEPT_CLEAR_OFFER": [
+          "Yes, go ahead."
+        ]
+      },
+      "frames": [
+        "Shall I {action}?",
+        "I could {action} for you. Should I?"
+      ],
+      "base_action": "walk through the stored result",
+      "deepfake_action": "run a new authenticity check",
+      "repeat_base": "Here is the text from the image once more: unchanged.",
+      "repeat_deepfake": "Second authenticity run complete; the verdict is {verdict}.",
+      "new_base": "First image description: a group gathered indoors in bright light.",
+      "new_deepfake": "First image result, as recorded: {verdict}."
+    },
+    "test": {
+      "continuations": {
+        "NEW_TARGET_CONTINUATION": [
+          "Now this one too."
+        ],
+        "REPEAT_PREVIOUS_OPERATION": [
+          "Do that once more."
+        ],
+        "ACCEPT_CLEAR_OFFER": [
+          "Please do that."
+        ]
+      },
+      "frames": [
+        "Would it help if I {action}?",
+        "I am able to {action}. Do you want that?"
+      ],
+      "base_action": "summarise the existing result",
+      "deepfake_action": "carry out another authenticity check",
+      "repeat_base": "The image text has been read again and has not changed.",
+      "repeat_deepfake": "The check was repeated; the recorded verdict is {verdict}.",
+      "new_base": "I have described the first image: people posing together outdoors.",
+      "new_deepfake": "The first image was checked and recorded as {verdict}."
+    }
+  },
+  "single_recipes": {
+    "general_chat": [
+      "BASE",
+      "no_assets",
+      "Write one short ordinary request in this scenario that needs no image: wording, planning or an everyday explanation. No authenticity checking."
+    ],
+    "ordinary_image": [
+      "BASE",
+      "ready",
+      "Write one short request about appearance, content or a caption of the attached image. Do not ask about authenticity or manipulation."
+    ],
+    "conceptual_authenticity": [
+      "BASE",
+      "ready",
+      "Write one short conceptual question about deepfakes, synthetic media or detectors. Do not ask to check the attached image."
+    ],
+    "negation_quotes_injection": [
+      "BASE",
+      "ready",
+      "Write one short request that mentions a detector, a quoted command or a quoted phrase but whose actual task is translate/read/explain/describe."
+    ],
+    "explain_existing": [
+      "BASE",
+      "stored_alt",
+      "Write one short request to explain or summarise the EXISTING stored verdict in plain language. Do not ask for a new check."
+    ],
+    "clarify_or_unsupported": [
+      "BASE",
+      "restricted",
+      "Write one short request asking for a real/fake check on the image the user thinks is attached. Do not mention metadata or availability."
+    ],
+    "explicit_authenticity": [
+      "DEEPFAKE",
+      "ready",
+      "Write one short direct request for a NEW real/fake or AI-generated verdict on the attached image."
+    ],
+    "indirect_authenticity": [
+      "DEEPFAKE",
+      "ready",
+      "Write one short request where the user sounds suspicious about the attached image and wants it verified, without saying \"deepfake\" or \"real or fake\"."
+    ],
+    "explicit_reanalysis": [
+      "DEEPFAKE",
+      "stored_alt",
+      "Write one short request to run the authenticity check AGAIN on the same image, rather than explaining the old result."
+    ],
+    "new_image_or_mixed": [
+      "DEEPFAKE",
+      "new_alt",
+      "Write one short request for a verdict on the newly selected image, optionally combined with a caption or reading task."
+    ]
+  },
+  "pair_kinds": [
+    {
+      "lineage": "NEW_TARGET_CONTINUATION",
+      "state_recipe": "new",
+      "base_category": "ordinary_image",
+      "deepfake_category": "new_image_or_mixed"
+    },
+    {
+      "lineage": "REPEAT_PREVIOUS_OPERATION",
+      "state_recipe": "stored_alt",
+      "base_category": "ordinary_image",
+      "deepfake_category": "explicit_reanalysis"
+    },
+    {
+      "lineage": "ACCEPT_CLEAR_OFFER",
+      "state_recipe": "stored_alt",
+      "base_category": "explain_existing",
+      "deepfake_category": "explicit_reanalysis"
+    }
+  ],
+  "restricted_states": [
+    "no_assets",
+    "missing",
+    "expired",
+    "unsupported",
+    "unknown",
+    "multiple",
+    "video"
+  ],
+  "note": "Code owns state, roles, offers and current messages; the model writes user utterances only."
+}

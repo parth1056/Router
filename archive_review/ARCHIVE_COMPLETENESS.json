@@ -1,0 +1,34 @@
+{
+  "verdict": "COMPLETE_FOR_PRESERVING_PRESENTING_AND_REPRODUCING_THE_COMPLETED_SYNTHETIC_ROUTER_EXPERIMENT_WITH_DOCUMENTED_RUNTIME_PREREQUISITES",
+  "original_handover": "Core weights/data/results valid; missing raw generation evidence, current error/label analysis and usable root tool paths/readme commands were supplemented",
+  "trained_weights_present_and_hash_matched": true,
+  "tokenizer_configs_questions_serializer_present_and_cross_checked": true,
+  "model_runtime_inference_reexecuted_on_this_laptop": false,
+  "remote_fresh_reload_receipt_preserved": true,
+  "reviewed_2000_200_300_dataset_and_data_locks_unchanged": true,
+  "original_full_generation_evidence_manifest_verified": 39,
+  "original_results_capsule_manifest_verified": 22,
+  "exact_reviewed_project_tools_at_usable_paths": true,
+  "exact_public_SDK_source_and_licence_bundled": true,
+  "paper_presentation_material": [
+    "methods and boundary",
+    "data dictionary",
+    "full result/error/label review",
+    "four SVG+PNG figures and captions",
+    "numeric metrics/epoch CSV tables",
+    "reproduction instructions"
+  ],
+  "deliberate_external_prerequisites": [
+    "Optional pristine baseline weights retrieved by exact public revision and five verified hashes",
+    "Installed compatible Python/PyTorch/CUDA runtime; not an offline OS/venv image"
+  ],
+  "dependency_provenance": "Fit-time core versions plus dated full college pip record; no fresh complete fit-time pip freeze was supplied",
+  "limits_preserved": [
+    "one seed",
+    "template-assisted synthetic/AI-reviewed labels",
+    "indirect-request label ambiguity",
+    "no real-app integration or human/production accuracy claim"
+  ],
+  "no_weights_data_or_scores_changed": true,
+  "no_new_fitting_or_evaluation_performed": true
+}

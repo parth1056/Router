@@ -1,0 +1,19 @@
+{
+  "decision": "APPROVED_FOR_FITTING_AFTER_PINNED_TOKENIZER_INPUT_CHECKS",
+  "source_capsule_sha256": "3bec2683239192f24fd8594e579abf29787a292305ca988ec1712511c1b4833c",
+  "expected_counts": {
+    "train": 2000,
+    "dev": 200,
+    "test": 300
+  },
+  "files": {
+    "data/dev.laya.jsonl": "18b1d39ec60413a36a2a52dd07bb5d32cecf05066dafcd27a9f6c5b017e9452b",
+    "data/dev_reviewed.jsonl": "9e5c43803dc5356e8bd71e0482049f1d701b208442295f6d7ee49fe10608997a",
+    "data/test.laya.jsonl": "b20ed45253dcae4f58915846ea8ae14ad0a9b9df6338e3e9f80639cae556b511",
+    "data/test_reviewed.jsonl": "b3076cc4fbb54565499c105828612807c4b0c63da77e51d851939df481c6b5d6",
+    "data/train.laya.jsonl": "54d21c221ea475f0f0600cd69b2dc2fe83cbc2f1eed415ef06d61cffc5716065",
+    "data/train_reviewed.jsonl": "939898da856939eff79acc3b534e87d74ed1618ed67efe56db3ba77f153054cf",
+    "config/questions.json": "7b04690b542095e29efbaac1139bb9f8014e34ead0b350ef63761c98e025ad21",
+    "tools/state.py": "032ef0d9222134405aac5252e58c8e1bc1f39b0b88d2f6ec37acaec4d88176e2"
+  }
+}

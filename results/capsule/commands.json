@@ -1,0 +1,79 @@
+[
+  {
+    "stage": "primary_training",
+    "command": [
+      "E:\\ly project c 68\\Polyvalent_LAYA_Freebuff_Handover\\LAYA_Routing_Handover\\.venv\\Scripts\\python.exe",
+      "E:\\ly project c 68\\Polyvalent_LAYA_Freebuff_Handover\\LAYA_Routing_Handover\\LAYA_Router_2000\\reviewed\\tools\\train_laya.py",
+      "--train",
+      "data/train.laya.jsonl",
+      "--dev",
+      "data/dev.laya.jsonl",
+      "--model",
+      "../../models/laya-english",
+      "--freeze",
+      "data/FREEZE.json",
+      "--micro-batch",
+      "4",
+      "--grad-accum",
+      "4",
+      "--out",
+      "runs\\reviewed_router\\primary"
+    ]
+  },
+  {
+    "stage": "freeze_selection",
+    "command": [
+      "E:\\ly project c 68\\Polyvalent_LAYA_Freebuff_Handover\\LAYA_Routing_Handover\\.venv\\Scripts\\python.exe",
+      "E:\\ly project c 68\\Polyvalent_LAYA_Freebuff_Handover\\LAYA_Routing_Handover\\LAYA_Router_2000\\reviewed\\tools\\select_and_freeze.py",
+      "--baseline-model",
+      "../../models/laya-english",
+      "--data-freeze",
+      "data/FREEZE.json",
+      "--out",
+      "runs\\reviewed_router\\FINAL_EVAL_FREEZE.json",
+      "--selection",
+      "runs\\reviewed_router\\primary\\selection.json"
+    ]
+  },
+  {
+    "stage": "baseline_test",
+    "command": [
+      "E:\\ly project c 68\\Polyvalent_LAYA_Freebuff_Handover\\LAYA_Routing_Handover\\.venv\\Scripts\\python.exe",
+      "E:\\ly project c 68\\Polyvalent_LAYA_Freebuff_Handover\\LAYA_Routing_Handover\\LAYA_Router_2000\\reviewed\\tools\\evaluate_laya.py",
+      "--model",
+      "../../models/laya-english",
+      "--data",
+      "data/test.laya.jsonl",
+      "--out",
+      "runs\\reviewed_router\\baseline_test.jsonl"
+    ]
+  },
+  {
+    "stage": "trained_test",
+    "command": [
+      "E:\\ly project c 68\\Polyvalent_LAYA_Freebuff_Handover\\LAYA_Routing_Handover\\.venv\\Scripts\\python.exe",
+      "E:\\ly project c 68\\Polyvalent_LAYA_Freebuff_Handover\\LAYA_Routing_Handover\\LAYA_Router_2000\\reviewed\\tools\\evaluate_laya.py",
+      "--model",
+      "E:\\ly project c 68\\Polyvalent_LAYA_Freebuff_Handover\\LAYA_Routing_Handover\\LAYA_Router_2000\\reviewed\\runs\\reviewed_router\\primary\\epoch_04",
+      "--data",
+      "data/test.laya.jsonl",
+      "--out",
+      "runs\\reviewed_router\\trained_test.jsonl"
+    ]
+  },
+  {
+    "stage": "comparison",
+    "command": [
+      "E:\\ly project c 68\\Polyvalent_LAYA_Freebuff_Handover\\LAYA_Routing_Handover\\.venv\\Scripts\\python.exe",
+      "E:\\ly project c 68\\Polyvalent_LAYA_Freebuff_Handover\\LAYA_Routing_Handover\\LAYA_Router_2000\\reviewed\\tools\\compare.py",
+      "--baseline",
+      "runs\\reviewed_router\\baseline_test.jsonl",
+      "--trained",
+      "runs\\reviewed_router\\trained_test.jsonl",
+      "--freeze",
+      "runs\\reviewed_router\\FINAL_EVAL_FREEZE.json",
+      "--out",
+      "runs\\reviewed_router\\comparison.json"
+    ]
+  }
+]

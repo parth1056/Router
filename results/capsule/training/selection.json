@@ -1,0 +1,42 @@
+{
+  "selected_checkpoint": "E:\\ly project c 68\\Polyvalent_LAYA_Freebuff_Handover\\LAYA_Routing_Handover\\LAYA_Router_2000\\reviewed\\runs\\reviewed_router\\primary\\epoch_04",
+  "selected_epoch": 4,
+  "selected_dev": {
+    "n": 200,
+    "tp": 72,
+    "tn": 124,
+    "fp": 2,
+    "fn": 2,
+    "accuracy": 0.98,
+    "macro_f1": 0.9785499785499785,
+    "deepfake_precision": 0.972972972972973,
+    "deepfake_recall": 0.972972972972973,
+    "deepfake_f1": 0.972972972972973,
+    "base_false_activation_rate": 0.015873015873015872,
+    "nll": 0.16224499407144752,
+    "brier": 0.020475810830491162
+  },
+  "baseline_dev": {
+    "n": 200,
+    "tp": 74,
+    "tn": 44,
+    "fp": 82,
+    "fn": 0,
+    "accuracy": 0.59,
+    "macro_f1": 0.5805626598465473,
+    "deepfake_precision": 0.47435897435897434,
+    "deepfake_recall": 1.0,
+    "deepfake_f1": 0.6434782608695652,
+    "base_false_activation_rate": 0.6507936507936508,
+    "nll": 0.6515057052969279,
+    "brier": 0.23099620648925268
+  },
+  "source_weights_sha256": "891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c",
+  "source_checkpoint": "E:\\ly project c 68\\Polyvalent_LAYA_Freebuff_Handover\\LAYA_Routing_Handover\\models\\laya-english",
+  "selection": "development only; no test read/scored",
+  "seed": 42,
+  "encoder_frozen": false,
+  "train_sha256": "54d21c221ea475f0f0600cd69b2dc2fe83cbc2f1eed415ef06d61cffc5716065",
+  "dev_sha256": "18b1d39ec60413a36a2a52dd07bb5d32cecf05066dafcd27a9f6c5b017e9452b",
+  "test_sha256": "b20ed45253dcae4f58915846ea8ae14ad0a9b9df6338e3e9f80639cae556b511"
+}

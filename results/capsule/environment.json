@@ -1,0 +1,14 @@
+{
+  "python": "3.11.9",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "torch": "2.13.0+cu130",
+  "transformers": "5.23.0",
+  "cuda": "13.0",
+  "cuda_available": true,
+  "gpu": "NVIDIA RTX A5000",
+  "gpu_total_memory_bytes": 25756696576,
+  "laya_sdk_commit": "80a1da1fa5448ea12163f4d977935625a0aea670",
+  "checkpoint_revision": "e333cb7c823cd1787276228260f56d02fbf5180b",
+  "source_weights_sha256": "891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c",
+  "captured_utc": "2026-11-17T06:10:24.965866+00:00"
+}

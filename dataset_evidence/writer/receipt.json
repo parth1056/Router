@@ -1,0 +1,115 @@
+{
+  "model": "qwen3:32b-q4_K_M",
+  "digest": "030ee887880fc378860c2dd35101da424377520441ae4bfe7be6deff8ade7840",
+  "requests": 300,
+  "slots_planned": 2400,
+  "rows": 2388,
+  "slots_failed": 12,
+  "failed_slot_ids": [
+    "fam2_test_p003_d",
+    "fam2_train_p069_b",
+    "fam2_train_p069_d",
+    "fam2_train_p149_d",
+    "fam2_train_p165_b",
+    "fam2_train_p165_d",
+    "fam2_train_p177_b",
+    "fam2_train_p177_d",
+    "fam2_train_p222_d",
+    "fam2_train_p249_b",
+    "fam2_train_p249_d",
+    "fam2_train_p309_d"
+  ],
+  "failure_records": [
+    {
+      "slot_id": "fam2_train_p069_b",
+      "family_id": "fam2_train_p069",
+      "split": "train",
+      "error": "user_speaks_as_assistant"
+    },
+    {
+      "slot_id": "fam2_train_p069_d",
+      "family_id": "fam2_train_p069",
+      "split": "train",
+      "error": "user_speaks_as_assistant"
+    },
+    {
+      "slot_id": "fam2_train_p149_d",
+      "family_id": "fam2_train_p149",
+      "split": "train",
+      "error": "request_repeats_current_message"
+    },
+    {
+      "slot_id": "fam2_train_p165_b",
+      "family_id": "fam2_train_p165",
+      "split": "train",
+      "error": "user_speaks_as_assistant"
+    },
+    {
+      "slot_id": "fam2_train_p165_d",
+      "family_id": "fam2_train_p165",
+      "split": "train",
+      "error": "user_speaks_as_assistant"
+    },
+    {
+      "slot_id": "fam2_train_p177_b",
+      "family_id": "fam2_train_p177",
+      "split": "train",
+      "error": "user_speaks_as_assistant"
+    },
+    {
+      "slot_id": "fam2_train_p177_d",
+      "family_id": "fam2_train_p177",
+      "split": "train",
+      "error": "user_speaks_as_assistant"
+    },
+    {
+      "slot_id": "fam2_train_p222_d",
+      "family_id": "fam2_train_p222",
+      "split": "train",
+      "error": "user_speaks_as_assistant"
+    },
+    {
+      "slot_id": "fam2_train_p249_b",
+      "family_id": "fam2_train_p249",
+      "split": "train",
+      "error": "user_speaks_as_assistant"
+    },
+    {
+      "slot_id": "fam2_train_p249_d",
+      "family_id": "fam2_train_p249",
+      "split": "train",
+      "error": "user_speaks_as_assistant"
+    },
+    {
+      "slot_id": "fam2_train_p309_d",
+      "family_id": "fam2_train_p309",
+      "split": "train",
+      "error": "user_speaks_as_assistant"
+    },
+    {
+      "slot_id": "fam2_test_p003_d",
+      "family_id": "fam2_test_p003",
+      "split": "test",
+      "error": "user_speaks_as_assistant"
+    }
+  ],
+  "per_split": {
+    "train": {
+      "rows": 1889,
+      "BASE": 1056,
+      "DEEPFAKE": 833
+    },
+    "dev": {
+      "rows": 200,
+      "BASE": 120,
+      "DEEPFAKE": 80
+    },
+    "test": {
+      "rows": 299,
+      "BASE": 180,
+      "DEEPFAKE": 119
+    }
+  },
+  "accepted": 0,
+  "status": "raw_candidate_unaccepted"
+}

@@ -1,0 +1,66 @@
+{
+  "status": "TRAINED_AND_EVALUATED_SYNTHETIC_PILOT",
+  "seconds": 958.6258900999965,
+  "selected_checkpoint": "E:\\ly project c 68\\Polyvalent_LAYA_Freebuff_Handover\\LAYA_Routing_Handover\\LAYA_Router_2000\\reviewed\\runs\\reviewed_router\\primary\\epoch_04",
+  "release_dir": "E:\\ly project c 68\\Polyvalent_LAYA_Freebuff_Handover\\LAYA_Routing_Handover\\LAYA_Router_2000\\reviewed\\runs\\reviewed_router\\trained_laya_router",
+  "full_model_archive": "E:\\ly project c 68\\Polyvalent_LAYA_Freebuff_Handover\\LAYA_Routing_Handover\\LAYA_Router_2000\\reviewed\\runs\\reviewed_router\\trained_laya_router.zip",
+  "archive_sha256": "1eaaa973ff0bb5d158ee02df9484652d9a579e1c81756ccf07b5aabb283103c6",
+  "test_sha256": "b20ed45253dcae4f58915846ea8ae14ad0a9b9df6338e3e9f80639cae556b511",
+  "comparison": {
+    "baseline": {
+      "n": 300,
+      "tp": 105,
+      "tn": 78,
+      "fp": 108,
+      "fn": 9,
+      "accuracy": 0.61,
+      "macro_f1": 0.6068152031454783,
+      "deepfake_precision": 0.49295774647887325,
+      "deepfake_recall": 0.9210526315789473,
+      "deepfake_f1": 0.6422018348623854,
+      "base_false_activation_rate": 0.5806451612903226,
+      "nll": 0.634007959820995,
+      "brier": 0.22279749425629794
+    },
+    "trained": {
+      "n": 300,
+      "tp": 110,
+      "tn": 184,
+      "fp": 2,
+      "fn": 4,
+      "accuracy": 0.98,
+      "macro_f1": 0.9787042733424827,
+      "deepfake_precision": 0.9821428571428571,
+      "deepfake_recall": 0.9649122807017544,
+      "deepfake_f1": 0.9734513274336283,
+      "base_false_activation_rate": 0.010752688172043012,
+      "nll": 0.15874596631111898,
+      "brier": 0.019887050274860905
+    },
+    "delta_accuracy_pp": 37.0,
+    "delta_macro_f1": 0.37188907019700435,
+    "paired_wrong_to_right": 115,
+    "paired_right_to_wrong": 4,
+    "group_bootstrap_delta_macro_f1_95pct": [
+      0.3017017238659707,
+      0.43937728444814206
+    ],
+    "bootstrap_groups": 105,
+    "majority_BASE": {
+      "n": 300,
+      "tp": 0,
+      "tn": 186,
+      "fp": 0,
+      "fn": 114,
+      "accuracy": 0.62,
+      "macro_f1": 0.38271604938271603,
+      "deepfake_precision": 0.0,
+      "deepfake_recall": 0.0,
+      "deepfake_f1": 0.0,
+      "base_false_activation_rate": 0.0
+    },
+    "observed_primary_improvement": true,
+    "limits": "Observed result on a frozen synthetic test, one selected seed42 run; not human-test or production-accuracy evidence. Bootstrap groups must represent shared scenario/template dependence."
+  },
+  "limits": "Actual held-out synthetic comparison; not a human-test/production certification. No desired improvement is fabricated."
+}

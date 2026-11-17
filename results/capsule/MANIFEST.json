@@ -1,0 +1,141 @@
+{
+  "capsule": "LAYA_Reviewed_Router_Results_2026-11-17",
+  "status": "TRAINED_AND_EVALUATED_SYNTHETIC_PILOT",
+  "test_sha256": "b20ed45253dcae4f58915846ea8ae14ad0a9b9df6338e3e9f80639cae556b511",
+  "weights_sha256": "cbca78ad4c27a037ecf6d5caae6c427e9cc7312f2bd0eadce66a07eb659597e8",
+  "archive_sha256": "1eaaa973ff0bb5d158ee02df9484652d9a579e1c81756ccf07b5aabb283103c6",
+  "counts": {
+    "test_rows": 300,
+    "bootstrap_groups": 105
+  },
+  "metrics": {
+    "baseline": {
+      "n": 300,
+      "tp": 105,
+      "tn": 78,
+      "fp": 108,
+      "fn": 9,
+      "accuracy": 0.61,
+      "macro_f1": 0.6068152031454783,
+      "deepfake_precision": 0.49295774647887325,
+      "deepfake_recall": 0.9210526315789473,
+      "deepfake_f1": 0.6422018348623854,
+      "base_false_activation_rate": 0.5806451612903226,
+      "nll": 0.634007959820995,
+      "brier": 0.22279749425629794
+    },
+    "trained": {
+      "n": 300,
+      "tp": 110,
+      "tn": 184,
+      "fp": 2,
+      "fn": 4,
+      "accuracy": 0.98,
+      "macro_f1": 0.9787042733424827,
+      "deepfake_precision": 0.9821428571428571,
+      "deepfake_recall": 0.9649122807017544,
+      "deepfake_f1": 0.9734513274336283,
+      "base_false_activation_rate": 0.010752688172043012,
+      "nll": 0.15874596631111898,
+      "brier": 0.019887050274860905
+    },
+    "delta_accuracy_pp": 37.0,
+    "delta_macro_f1": 0.37188907019700435
+  },
+  "excluded": [
+    "model weights",
+    "venv",
+    "caches",
+    "secrets"
+  ],
+  "files": {
+    "commands.json": {
+      "sha256": "ab9ce6f0c8b8cb30bfb7f2d38f1bc9d49f7c94959e05e9b088771f25270a8e87",
+      "bytes": 2955
+    },
+    "comparison.json": {
+      "sha256": "76adb497e2bf47629e39d578506f99f62c42de565e43f39b7327e78ca4dfa1ee",
+      "bytes": 1626
+    },
+    "comparison.md": {
+      "sha256": "a5782a279df48bb2fb36e3482917e03066cf1433285f4b255f25ba7945c050e1",
+      "bytes": 652
+    },
+    "data/FREEZE.json": {
+      "sha256": "6a9de9eedd4bf19de8343bba855f3f0cdd2b7dbdcb9d043e545867d0d9daaf0f",
+      "bytes": 1043
+    },
+    "environment.json": {
+      "sha256": "6ead7ef8b02b1b8d41736733b4ef07d597b4060ddba442ee96a6fe329240055d",
+      "bytes": 534
+    },
+    "FINAL_EVAL_FREEZE.json": {
+      "sha256": "aba43622cdc043bc284aa00fcda9ae92c6f4d9324ac6591a713c83e25c221e0f",
+      "bytes": 3235
+    },
+    "FINISHED.json": {
+      "sha256": "98fb22ba279aeebc0b90076291a80ee07c96d2f36fcb9b79b13e646d68b1f353",
+      "bytes": 2685
+    },
+    "logs/baseline_test.log": {
+      "sha256": "17f134c906e7a5ac66a60a01fda90be5c839148de9d66d88afa6fc70e660d02b",
+      "bytes": 1037
+    },
+    "logs/comparison.log": {
+      "sha256": "7d9a35b074688a813ff41ce4cd4821649e10d20c73daff27b115b5e67ccae7a3",
+      "bytes": 1212
+    },
+    "logs/freeze_selection.log": {
+      "sha256": "39057af8ed2893f8cd56c3277cc95ee9ebbf2ebc6797f5eb3423f104b0c81dab",
+      "bytes": 1734
+    },
+    "logs/primary_training.log": {
+      "sha256": "a3302421dc5acf4f3767b4f7fe90ce7bf984e6f91aa01348e4cafd7c30f4fb41",
+      "bytes": 1216
+    },
+    "logs/trained_test.log": {
+      "sha256": "0a1797ab9cb08a4ae76a92bc9e0dd339035f716edfbaef446ecc1a0f5e12abff",
+      "bytes": 1088
+    },
+    "predictions/baseline_test.jsonl": {
+      "sha256": "e3d30070847ade77d5555bcb4136acda348a3fadf46111d721c6573527ae5776",
+      "bytes": 70020
+    },
+    "predictions/baseline_test.receipt.json": {
+      "sha256": "17f134c906e7a5ac66a60a01fda90be5c839148de9d66d88afa6fc70e660d02b",
+      "bytes": 1037
+    },
+    "predictions/trained_test.jsonl": {
+      "sha256": "71d77e558eb3e7f2eaf35ce4f2c70589bcb8fcad4407012f61060e06c1e5ee1b",
+      "bytes": 69991
+    },
+    "predictions/trained_test.receipt.json": {
+      "sha256": "0a1797ab9cb08a4ae76a92bc9e0dd339035f716edfbaef446ecc1a0f5e12abff",
+      "bytes": 1088
+    },
+    "RELOAD_RECEIPT.json": {
+      "sha256": "73ed3ff85e3a0ca821cbb5356daa449d742f86dcb377f9f7b28b804c762d9f5d",
+      "bytes": 694
+    },
+    "RESULTS.md": {
+      "sha256": "6d48ef30fbe272b1abb13540efda68ca173f7812044879ede85579023eb05360",
+      "bytes": 3811
+    },
+    "training/baseline_dev.json": {
+      "sha256": "a77c196b4a2d6a7773871a598bc8086d69a7d0c0ce475d06c8f053c016b7f050",
+      "bytes": 352
+    },
+    "training/history.json": {
+      "sha256": "ef89a887fc0f239df747a5d712d42be0b2faf3359cae29605f461c8159be6f9d",
+      "bytes": 4549
+    },
+    "training/selection.json": {
+      "sha256": "27e756ce34692e21adc8dd1455bf3a1b8306580c0e483008165223dfb8955d56",
+      "bytes": 1600
+    },
+    "training/training_receipt.json": {
+      "sha256": "d6167192ec39966c6621195f20a94b2e597238fc05149f07b1ad7c58159783f9",
+      "bytes": 821
+    }
+  }
+}

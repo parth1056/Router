@@ -1,0 +1,16 @@
+{
+  "artifact": "E:\\ly project c 68\\Polyvalent_LAYA_Freebuff_Handover\\LAYA_Routing_Handover\\LAYA_Router_2000\\reviewed\\runs\\reviewed_router\\trained_laya_router",
+  "reloaded_rows": 24,
+  "weights_sha256": "cbca78ad4c27a037ecf6d5caae6c427e9cc7312f2bd0eadce66a07eb659597e8",
+  "predictions_identical_to_stored": true,
+  "mismatched_ids": [],
+  "device": "cuda",
+  "tokenizer_files": [
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "has_questions": true,
+  "has_serializer": true,
+  "comparison_provenance_sha256": "aba43622cdc043bc284aa00fcda9ae92c6f4d9324ac6591a713c83e25c221e0f",
+  "note": "Fresh process, fresh checkpoint load, same 24 frozen test inputs."
+}

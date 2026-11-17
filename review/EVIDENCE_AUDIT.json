@@ -1,0 +1,46 @@
+{
+  "source_hashes_verified": 39,
+  "original_rows": 2500,
+  "reviewed_rows": 2500,
+  "counts": {
+    "train": 2000,
+    "dev": 200,
+    "test": 300
+  },
+  "blind_input_and_judgement_bijection": 1200,
+  "critic_coverage": {
+    "train": 700,
+    "dev": 200,
+    "test": 300
+  },
+  "critic_disagreements": {
+    "train": 95,
+    "test": 18,
+    "dev": 16
+  },
+  "events": {
+    "writer/events.jsonl": {
+      "calls": 300,
+      "raw_parsed_match": true,
+      "hashes_match": true,
+      "completed": true
+    },
+    "writer/retry_events.jsonl": {
+      "calls": 12,
+      "raw_parsed_match": true,
+      "hashes_match": true,
+      "completed": true
+    },
+    "critic/events.jsonl": {
+      "calls": 1200,
+      "raw_parsed_match": true,
+      "hashes_match": true,
+      "completed": true
+    }
+  },
+  "reviewed_input_schema_and_asset_references_pass": true,
+  "heldout_inputs_unchanged": true,
+  "tokenizer_and_GPU_checks": "NOT RUN HERE; must execute pinned tokenizer input checks before fitting",
+  "human_review": false,
+  "LAYA_training_or_inference": false
+}

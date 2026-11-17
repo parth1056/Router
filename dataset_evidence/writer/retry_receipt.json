@@ -1,0 +1,11 @@
+{
+  "model": "qwen3:32b-q4_K_M",
+  "digest": "030ee887880fc378860c2dd35101da424377520441ae4bfe7be6deff8ade7840",
+  "requested": 12,
+  "recovered": 12,
+  "still_missing": [],
+  "rows_by_split": {
+    "test": 1,
+    "train": 11
+  }
+}

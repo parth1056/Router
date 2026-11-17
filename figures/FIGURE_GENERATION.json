@@ -1,0 +1,10 @@
+{
+  "source": "Preserved comparison/history JSON; no generated or estimated result values",
+  "matplotlib": "3.11.1",
+  "formats": [
+    "SVG vector",
+    "PNG"
+  ],
+  "uncertainty": "No invented seed variability or accuracy error bars; group-bootstrap delta is in result JSON",
+  "scope": "Synthetic benchmark only; see archive_review/RESULTS_CODEX_REVIEW.md for indirect-label ambiguity"
+}

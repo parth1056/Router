@@ -1,0 +1,56 @@
+{
+  "baseline": {
+    "n": 300,
+    "tp": 105,
+    "tn": 78,
+    "fp": 108,
+    "fn": 9,
+    "accuracy": 0.61,
+    "macro_f1": 0.6068152031454783,
+    "deepfake_precision": 0.49295774647887325,
+    "deepfake_recall": 0.9210526315789473,
+    "deepfake_f1": 0.6422018348623854,
+    "base_false_activation_rate": 0.5806451612903226,
+    "nll": 0.6340079598209953,
+    "brier": 0.22279749425629808
+  },
+  "trained": {
+    "n": 300,
+    "tp": 110,
+    "tn": 184,
+    "fp": 2,
+    "fn": 4,
+    "accuracy": 0.98,
+    "macro_f1": 0.9787042733424827,
+    "deepfake_precision": 0.9821428571428571,
+    "deepfake_recall": 0.9649122807017544,
+    "deepfake_f1": 0.9734513274336283,
+    "base_false_activation_rate": 0.010752688172043012,
+    "nll": 0.15874596631111898,
+    "brier": 0.0198870502748609
+  },
+  "delta_accuracy_pp": 37.0,
+  "delta_macro_f1": 0.37188907019700435,
+  "paired_wrong_to_right": 115,
+  "paired_right_to_wrong": 4,
+  "group_bootstrap_delta_macro_f1_95pct": [
+    0.3017017238659707,
+    0.43937728444814206
+  ],
+  "bootstrap_groups": 105,
+  "majority_BASE": {
+    "n": 300,
+    "tp": 0,
+    "tn": 186,
+    "fp": 0,
+    "fn": 114,
+    "accuracy": 0.62,
+    "macro_f1": 0.38271604938271603,
+    "deepfake_precision": 0.0,
+    "deepfake_recall": 0.0,
+    "deepfake_f1": 0.0,
+    "base_false_activation_rate": 0.0
+  },
+  "observed_primary_improvement": true,
+  "limits": "Observed result on a frozen synthetic test, one selected seed42 run; not human-test or production-accuracy evidence. Bootstrap groups must represent shared scenario/template dependence."
+}

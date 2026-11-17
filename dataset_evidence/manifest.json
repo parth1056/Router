@@ -1,0 +1,429 @@
+{
+  "bundle": "LAYA_Dataset_2000_Review_2026-11-17",
+  "purpose": "row-level AI review before any fitting; nothing here is accepted data",
+  "counts": {
+    "train": {
+      "rows": 2000,
+      "BASE": 1120,
+      "DEEPFAKE": 880,
+      "context_rows": 805,
+      "families": 670,
+      "curated_seed_rows": 100,
+      "max_variants_in_family": 4,
+      "critic_views": 700,
+      "critic_disagreements": 95,
+      "critic_ambiguous": 14,
+      "writer_readback_disagreements": 0
+    },
+    "dev": {
+      "rows": 200,
+      "BASE": 120,
+      "DEEPFAKE": 80,
+      "context_rows": 80,
+      "families": 70,
+      "curated_seed_rows": 0,
+      "max_variants_in_family": 4,
+      "critic_views": 200,
+      "critic_disagreements": 16,
+      "critic_ambiguous": 1,
+      "writer_readback_disagreements": 0
+    },
+    "test": {
+      "rows": 300,
+      "BASE": 180,
+      "DEEPFAKE": 120,
+      "context_rows": 120,
+      "families": 105,
+      "curated_seed_rows": 0,
+      "max_variants_in_family": 4,
+      "critic_views": 300,
+      "critic_disagreements": 18,
+      "critic_ambiguous": 6,
+      "writer_readback_disagreements": 0
+    }
+  },
+  "expected": {
+    "train": 2000,
+    "dev": 200,
+    "test": 300
+  },
+  "checks": {
+    "families": {
+      "train": 670,
+      "dev": 70,
+      "test": 105
+    },
+    "route_mix_vs_target": {
+      "train": {
+        "actual": [
+          1120,
+          880
+        ],
+        "target": [
+          1200,
+          800
+        ]
+      },
+      "dev": {
+        "actual": [
+          120,
+          80
+        ],
+        "target": [
+          120,
+          80
+        ]
+      },
+      "test": {
+        "actual": [
+          180,
+          120
+        ],
+        "target": [
+          180,
+          120
+        ]
+      }
+    },
+    "shared_dialogue": {
+      "rows_with_shared_dialogue": 130,
+      "pair_rows": 114,
+      "single_rows": 16,
+      "within_family": 0,
+      "note": "Shared dialogue means another row has the same current message and the same history text; scenes, states and labels stay independent. It happens because short continuations and code-owned assistant templates repeat."
+    },
+    "message_texts": {
+      "train": 1250,
+      "dev": 123,
+      "test": 183
+    },
+    "messages_shared_train_test": 0,
+    "messages_shared_train_dev": 1
+  },
+  "route_mix_targets": {
+    "train": [
+      1200,
+      800
+    ],
+    "dev": [
+      120,
+      80
+    ],
+    "test": [
+      180,
+      120
+    ]
+  },
+  "duplicates": {
+    "rows_with_shared_dialogue": 130,
+    "pair_rows": 114,
+    "single_rows": 16,
+    "within_family": 0,
+    "note": "Shared dialogue means another row has the same current message and the same history text; scenes, states and labels stay independent. It happens because short continuations and code-owned assistant templates repeat."
+  },
+  "failed_slots": 12,
+  "retry": {
+    "model": "qwen3:32b-q4_K_M",
+    "digest": "030ee887880fc378860c2dd35101da424377520441ae4bfe7be6deff8ade7840",
+    "requested": 12,
+    "recovered": 12,
+    "still_missing": [],
+    "rows_by_split": {
+      "test": 1,
+      "train": 11
+    }
+  },
+  "first_pass_failures": [
+    {
+      "slot_id": "fam2_train_p069_b",
+      "family_id": "fam2_train_p069",
+      "split": "train",
+      "error": "user_speaks_as_assistant"
+    },
+    {
+      "slot_id": "fam2_train_p069_d",
+      "family_id": "fam2_train_p069",
+      "split": "train",
+      "error": "user_speaks_as_assistant"
+    },
+    {
+      "slot_id": "fam2_train_p149_d",
+      "family_id": "fam2_train_p149",
+      "split": "train",
+      "error": "request_repeats_current_message"
+    },
+    {
+      "slot_id": "fam2_train_p165_b",
+      "family_id": "fam2_train_p165",
+      "split": "train",
+      "error": "user_speaks_as_assistant"
+    },
+    {
+      "slot_id": "fam2_train_p165_d",
+      "family_id": "fam2_train_p165",
+      "split": "train",
+      "error": "user_speaks_as_assistant"
+    },
+    {
+      "slot_id": "fam2_train_p177_b",
+      "family_id": "fam2_train_p177",
+      "split": "train",
+      "error": "user_speaks_as_assistant"
+    },
+    {
+      "slot_id": "fam2_train_p177_d",
+      "family_id": "fam2_train_p177",
+      "split": "train",
+      "error": "user_speaks_as_assistant"
+    },
+    {
+      "slot_id": "fam2_train_p222_d",
+      "family_id": "fam2_train_p222",
+      "split": "train",
+      "error": "user_speaks_as_assistant"
+    },
+    {
+      "slot_id": "fam2_train_p249_b",
+      "family_id": "fam2_train_p249",
+      "split": "train",
+      "error": "user_speaks_as_assistant"
+    },
+    {
+      "slot_id": "fam2_train_p249_d",
+      "family_id": "fam2_train_p249",
+      "split": "train",
+      "error": "user_speaks_as_assistant"
+    },
+    {
+      "slot_id": "fam2_train_p309_d",
+      "family_id": "fam2_train_p309",
+      "split": "train",
+      "error": "user_speaks_as_assistant"
+    },
+    {
+      "slot_id": "fam2_test_p003_d",
+      "family_id": "fam2_test_p003",
+      "split": "test",
+      "error": "user_speaks_as_assistant"
+    }
+  ],
+  "critic_coverage": {
+    "rows": 1200,
+    "dev": 200,
+    "test": 300,
+    "train_sample": 600,
+    "curated_seeds": 100
+  },
+  "models": {
+    "generator": "qwen3:32b-q4_K_M",
+    "generator_digest": "030ee887880fc378860c2dd35101da424377520441ae4bfe7be6deff8ade7840",
+    "critic": "gemma3:27b-it-q4_K_M",
+    "critic_digest": "6be2e2ba6843b9255820e2de2cbbe75cfdef0294ac7a531572e654d6e0eefe7d"
+  },
+  "hashes": {
+    "plan": {
+      "train": "4e9f9a817722c387887ea6031b3fc740793a9bd23cc72961c854118d0c65c318",
+      "dev": "c28cc5a448df8ea0121d4efe35625489c0ccdf0ad5d7160cf611317f35877b1e",
+      "test": "6d2202d1b8cc25e124b8ad325225fd3730a4720b4d35c8ab30f05cf41da637c4"
+    },
+    "generation_prompt": "72d2b5d4fc9c17b9004715907ad732205394f83a939971bc917a482c6f9085e1",
+    "policy": "48dfb3f7bcded8227e67e2bc02afc7656cb6131064a809d7f90616210f1787ca",
+    "generator_runner": "9358ac6044afbc399eff7839a43dd2e43ca4e6291d8c1c47becac1ddf0cd4b3a",
+    "seed": "755bfc438aaaead1ae9548f94fabc27407f1144418449be05949f279508a2876",
+    "input_schema": "8d4cc99478bd776bb2188ce2e4341240aa0aa9b4eaa6696ae62d20ee9b49c13c"
+  },
+  "options": {
+    "generation": {
+      "temperature": 0.8,
+      "seed": 20261116,
+      "num_ctx": 4096,
+      "num_predict": 2048,
+      "top_p": 0.95,
+      "repeat_penalty": 1.05
+    },
+    "critic": {
+      "temperature": 0.0,
+      "seed": 20261116,
+      "num_ctx": 4096,
+      "num_predict": 384,
+      "top_p": 0.9,
+      "repeat_penalty": 1.0
+    }
+  },
+  "timings": {
+    "generation_requests": 300,
+    "generation_wall_seconds": 3939.1,
+    "generation_eval_tokens": 91182,
+    "critic_requests": 1200,
+    "critic_wall_seconds": 5145.0
+  },
+  "disclosures": [
+    "Every row is template-assisted: scenario catalogue, state, code-owned assistant turn, operative offer and neutral current message are code; the pinned generator wrote only the user request text.",
+    "human_reviewed is false everywhere; Codex inspection is AI adjudication.",
+    "accepted_for_training is false everywhere; nothing was fitted.",
+    "Curated seed rows reuse the Batch-100 reviewed material and were not regenerated; their earlier curation is preserved verbatim.",
+    "Writer readback is the generator reading its own row, not a blind check; it agreed with the condition on every row, so it carries no independent evidence.",
+    "The critic is a fallible blind opinion, not a label; its agreement is not used as a gate and no threshold was introduced.",
+    "Critic coverage is disclosed per split: dev/test fully, train sampled plus all curated seeds.",
+    "12 of 2,400 generated slots failed first-pass text checks (user speaking as the assistant, or repeating the fixed current message); each was re-sampled once with a fresh seed, all 12 recovered, and every replacement records the slot it replaced in provenance. No slot was synthesised by hand."
+  ],
+  "files": {
+    "candidates/dev_candidates.jsonl": {
+      "sha256": "bd4f85b8c0ab2d561d10fcab8f6d40a147883cd4ab5855fedfed348ca3a587ee",
+      "bytes": 390172
+    },
+    "candidates/test_candidates.jsonl": {
+      "sha256": "bd09181e973589c55bb9259074298a9d0b6ca6ac1e5fb35b471a66c797814d9f",
+      "bytes": 582860
+    },
+    "candidates/train_candidates.jsonl": {
+      "sha256": "eaca52214c11bc9d1110ba53bbdeec6014114818667ec888a566d071f9afc598",
+      "bytes": 3641729
+    },
+    "critic/blind_inputs.jsonl": {
+      "sha256": "195654345ac0f4efefcc5b1674ef8ef90c1deba7298695cc0d639e48d0e96fc6",
+      "bytes": 461353
+    },
+    "critic/events.jsonl": {
+      "sha256": "f1233db0c790dd062c703de29bd4182d14eb0b69f445213f121bd01a16613895",
+      "bytes": 8054498
+    },
+    "critic/judgements.jsonl": {
+      "sha256": "d77fd0d4dd61260b50600612c838e7cfcf99563f299eb383026148e5a7c48b78",
+      "bytes": 409586
+    },
+    "critic/PRIVATE_MAPPING.json": {
+      "sha256": "bdad4745684a1ac95016955ac8eb8abedced601ceee5ef428ea556104446c288",
+      "bytes": 59730
+    },
+    "critic/receipt.json": {
+      "sha256": "fb4da64b193bb528471c831b2a892835d6ecb7ca203b202b3c0b6160e5e3d857",
+      "bytes": 380
+    },
+    "critic/run_manifest.json": {
+      "sha256": "ffbd48534fda8de9f693fe4aec7c2dcb93aafcc99f4902ff31f0683c097ec094",
+      "bytes": 1332
+    },
+    "failed_slots.jsonl": {
+      "sha256": "58a8a15ea6c86d15c300a824ad079c0803998698ac508eac5f846fcc59ff23a0",
+      "bytes": 1372
+    },
+    "README.md": {
+      "sha256": "2b50b1d50d8afd02e3e7a266646d00155d8a74b2c9260f763e42c624eb433601",
+      "bytes": 1049
+    },
+    "REVIEW_ROWS.jsonl": {
+      "sha256": "192079e3837536137d0c8706192f7a3b4c89c21ce42b52b6f28edbd7c8e51669",
+      "bytes": 4614761
+    },
+    "REVIEW_SUMMARY.md": {
+      "sha256": "049693dec1c60e17ee3a06ae4f24cbda745579e808572c39cb34ddfe592d9aba",
+      "bytes": 3663
+    },
+    "sources/bundle_2000.py": {
+      "sha256": "e5d1085049e108d337d19a1651e085d16184f1b0265331d93b764f88fed35df8",
+      "bytes": 23917
+    },
+    "sources/dev_jobs.json": {
+      "sha256": "c28cc5a448df8ea0121d4efe35625489c0ccdf0ad5d7160cf611317f35877b1e",
+      "bytes": 128984
+    },
+    "sources/input_schema.json": {
+      "sha256": "8d4cc99478bd776bb2188ce2e4341240aa0aa9b4eaa6696ae62d20ee9b49c13c",
+      "bytes": 2527
+    },
+    "sources/laya_core.py": {
+      "sha256": "05a4aa0b1087267e245d29592644141322a732c4a54ef9f8344a2a2f93259a75",
+      "bytes": 36353
+    },
+    "sources/models.json": {
+      "sha256": "123dc3aa50026fa61309dc702be3442529f1d48848dcb6814a5f8c1372bc6e9c",
+      "bytes": 956
+    },
+    "sources/pair_recipe_bank.json": {
+      "sha256": "1e199ab0a647894ed915663b5759cf0666bc10152d5c9ea3043a7702a58d3cd1",
+      "bytes": 20723
+    },
+    "sources/pair_renderer.py": {
+      "sha256": "cff4e03a31c8a3bec84a743a6a08ec1900c37828b474a6ca00496a0608bc4305",
+      "bytes": 2950
+    },
+    "sources/plan_2000.py": {
+      "sha256": "d6a66f7fa0714c00294d5ddb6a0ce7f7312de985658d03a0da1d8e0a311d5717",
+      "bytes": 23401
+    },
+    "sources/PLAN_SUMMARY.json": {
+      "sha256": "89a9cd0082b51f3329305ed1c6362f1c1f0e3cb9b1d9b582f807cb7dbbdf84ae",
+      "bytes": 768
+    },
+    "sources/PROMPT_generator.txt": {
+      "sha256": "331ebb7a311ebe359db48e2f40b92c71896f9fdd8276d3a3468958d5ecced619",
+      "bytes": 1412
+    },
+    "sources/prompt_reference_policy.md": {
+      "sha256": "48dfb3f7bcded8227e67e2bc02afc7656cb6131064a809d7f90616210f1787ca",
+      "bytes": 3136
+    },
+    "sources/recipes.json": {
+      "sha256": "b3dc77ab016a2c401a9606d7b2965ffe681b4b5ec4c8d59315fad23098dbfbee",
+      "bytes": 5680
+    },
+    "sources/routing_policy.md": {
+      "sha256": "48dfb3f7bcded8227e67e2bc02afc7656cb6131064a809d7f90616210f1787ca",
+      "bytes": 3136
+    },
+    "sources/run_2000.py": {
+      "sha256": "9358ac6044afbc399eff7839a43dd2e43ca4e6291d8c1c47becac1ddf0cd4b3a",
+      "bytes": 22622
+    },
+    "sources/seed100_ai_reviewed_candidates.jsonl": {
+      "sha256": "755bfc438aaaead1ae9548f94fabc27407f1144418449be05949f279508a2876",
+      "bytes": 132620
+    },
+    "sources/state_recipes.py": {
+      "sha256": "dc8bdb1fe8a60311948ce90855745ab59b3b0fcd8c968c893e91d8763e215ece",
+      "bytes": 1532
+    },
+    "sources/test_jobs.json": {
+      "sha256": "6d2202d1b8cc25e124b8ad325225fd3730a4720b4d35c8ab30f05cf41da637c4",
+      "bytes": 194640
+    },
+    "sources/train_jobs.json": {
+      "sha256": "4e9f9a817722c387887ea6031b3fc740793a9bd23cc72961c854118d0c65c318",
+      "bytes": 1265025
+    },
+    "writer/events.jsonl": {
+      "sha256": "686b4a73823b8bc2f3766df28301d6d0cd99d1f2d3ee42ed7ba00e32520e02f1",
+      "bytes": 2919861
+    },
+    "writer/generated_rows.jsonl": {
+      "sha256": "23c52b16990c1b9e0429484aecb6a335a91ac42a23a9071635036bf93b8ac042",
+      "bytes": 3089171
+    },
+    "writer/raw_writer_outputs.jsonl": {
+      "sha256": "28d99a663f8090e8d2d57ccfdd027bf787b70da97c741fed60e3c1f95c0ac39b",
+      "bytes": 393221
+    },
+    "writer/receipt.json": {
+      "sha256": "be00c6b51228ca9ff4d8c0a562f36f7cf5c7ca39695210968134f2854599cce6",
+      "bytes": 2850
+    },
+    "writer/retry_events.jsonl": {
+      "sha256": "8c77e60f98bf92d62e55279d5a72ce005b7a19d54b1dae12712a4d8f45634010",
+      "bytes": 56899
+    },
+    "writer/retry_receipt.json": {
+      "sha256": "0ac085cdfc6bf06dbe88a13b6c7d5fc5b6227a0c615b82622821df1eb1923a9f",
+      "bytes": 243
+    },
+    "writer/retry_rows.jsonl": {
+      "sha256": "b891bb4b39ad5e958ebcc6112684b56653d589cc597642b363da211abc055738",
+      "bytes": 18472
+    },
+    "writer/run_manifest.json": {
+      "sha256": "ddb9ad06484f8df4fb61926e04632afbd9ec44445b0fc430d7569bb374c937bd",
+      "bytes": 1642
+    }
+  },
+  "note_on_manifest_hash": "manifest.json does not hash itself; the outer ZIP SHA-256 covers it and is written to runs/BUNDLE_ZIP_SHA256.txt"
+}

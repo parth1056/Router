@@ -1,0 +1,11 @@
+{
+  "original_archive": "C:\\Users\\parth\\Downloads\\LAYA_FineTuned_Router_Handover_2026-11-17.zip",
+  "original_archive_sha256": "1eb0033533a11d25af05cb5ecbb8879758b91e355295ea191868e46cb1dc3f1d",
+  "original_bytes": 844387916,
+  "original_hashes_verified": 109,
+  "trained_weights_sha256": "cbca78ad4c27a037ecf6d5caae6c427e9cc7312f2bd0eadce66a07eb659597e8",
+  "safetensors_tensor_count": 206,
+  "safetensors_elements": 421293830,
+  "safetensors_structure_valid": true,
+  "core_tools_changed_vs_handover": []
+}
